@@ -1,98 +1,220 @@
-<HTML>
- <HEAD>
-  <TITLE> Homepage of Wenrui Huang</TITLE>
-  <META NAME="Generator" CONTENT="EditPlus">
-  <META NAME="Author" CONTENT="">
-  <META NAME="Keywords" CONTENT="">
-  <META NAME="Description" CONTENT="">
- </HEAD>
-<BODY style="background-color:#ffffff", font size="5" >  
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wenrui Huang — Homepage</title>
 
+  <!-- Meta -->
+  <meta name="description" content="Wenrui Huang — PhD student in Mathematics. Research in analysis, dispersive PDEs, and kinetic equations." />
+  <meta name="author" content="Wenrui Huang" />
 
-  <div align = "left">
-  <ol style = "#000000">
+  <!-- Social cards (optional; fill as desired) -->
+  <meta property="og:title" content="Wenrui Huang — Homepage" />
+  <meta property="og:description" content="PhD student in Mathematics. Research in analysis, dispersive PDEs, and kinetic equations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="summary" />
 
+  <!-- Minimal, accessible, responsive styles -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #5a5a5a;
+      --link: #0a66c2; /* accessible blue */
+      --border: #e6e6e6;
+      --accent: #0a66c2;
+      --card: #fafafa;
+      --maxw: 900px;
+      --radius: 14px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0f12;
+        --text: #f5f7fb;
+        --muted: #b7bdc9;
+        --link: #7db2ff;
+        --border: #1d2027;
+        --card: #141720;
+        --accent: #7db2ff;
+      }
+    }
 
-<font size="4">
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 2rem 1.25rem 3rem; }
 
-<BR>
-<h2> Homepage of Wenrui Huang</h2>
+    header { padding: 2rem 0 1rem; }
+    .title { font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem); margin: 0; }
+    .subtitle { margin: 0.2rem 0 0; color: var(--muted); font-weight: 500; }
 
- <br>
- 
-I am currently a third year PhD student in the Department of Mathematics at Brown University. My advisor is Benoît Pausader. 
-<p>
-I was previouly an undergraduate stuednt at University of Science and Technology of China. You can find my CV  <a href="whuang_cv.pdf" style = " color:#0066cc" target = "_blank">here</a>.
-</p>
- 
+    nav { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .75rem; }
+    nav a { text-decoration: none; color: var(--link); border: 1px solid var(--border); padding: .4rem .7rem; border-radius: 999px; }
+    nav a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
- 
-<hr>    
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.2rem;
+      margin: 1.25rem 0;
+    }
 
-<h2>
-  Research Interests
-</h2>
-  I am generally interested in analysis and PDEs. My research focuses on nonlinear dispersive PDEs and kinetic equations, in particular the long-time behavior and stability problems.
+    h2 { font-size: clamp(1.25rem, 1.2vw + 1rem, 1.6rem); margin: 1.5rem 0 .5rem; }
+    h3 { font-size: 1.05rem; margin: 1rem 0 .25rem; }
+    p { margin: .5rem 0 0; }
 
-<br>
-<br>
- 
-<h2>
-  Papers and Preprints
-</h2>
-<ol>  
+    a { color: var(--link); }
+    a:hover { text-decoration: underline; }
 
- 
-<li> <a HREF="https://arxiv.org/abs/2407.16919" style = " color:#0066cc" target = "_blank"> 
-<u>Scattering of the Vlasov-Riesz system in the three dimensions
-</u></a>, (with H. Kwon) <a href="https://arxiv.org/abs/2407.16919" style = " color:#0066cc" target = "_blank">[arXiv:2407.16919] </li>
+    ul, ol { padding-left: 1.25rem; }
+    li + li { margin-top: .35rem; }
 
-<br>
- 
- <li> <a HREF="https://arxiv.org/abs/2411.02737" style = " color:#0066cc" target = "_blank"> 
-<u> Modified wave operators for the Hartree equation with repulsive Coulomb potential
-</u></a>, <a href="https://arxiv.org/abs/2411.02737" style = " color:#0066cc" target = "_blank">[arXiv:2411.02737]</a> </li>   
+    .cv-buttons { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .75rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      text-decoration: none; color: var(--bg); background: var(--accent);
+      padding: .55rem .9rem; border-radius: 10px; border: 1px solid transparent;
+      font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,.06);
+    }
+    .btn.secondary { background: transparent; color: var(--link); border-color: var(--border); }
 
- <br>
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .95rem; }
+    .small { font-size: .95rem; color: var(--muted); }
 
-    <li><a HREF="https://arxiv.org/abs/2412.13434" style = " color:#0066cc" target = "_blank"> 
-<u> The Vlasov-Poission system with a perfectly conducting wall: Convex domains
-</u></a> ,(with B. Pausader and M. Suzuki) <a href="https://arxiv.org/abs/2412.13434" style = " color:#0066cc" target = "_blank">[arXiv:2412.13434]</a>   </li>
-      </ol>
-<br>
+    /* Better link targets */
+    :target { scroll-margin-top: 2rem; }
+  </style>
 
+  <!-- Structured data (JSON-LD) — optional but good for SEO. Fill sameAs URLs if desired. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wenrui Huang",
+    "jobTitle": "PhD Student in Mathematics",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Brown University"},
+    "url": "",
+    "sameAs": []
+  }
+  </script>
+</head>
 
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Wenrui Huang</h1>
+      <p class="subtitle">PhD Student · Department of Mathematics, Brown University</p>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Papers & Preprints</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
+    <main>
+      <section id="about" class="card" aria-labelledby="about-h2">
+        <h2 id="about-h2">About</h2>
+        <p>
+          I am a third-year PhD student in the Department of Mathematics at Brown University. My advisor is
+          <a href="https://sites.google.com/brown.edu/benoit-pausader" target="_blank" rel="noopener">Benoît Pausader</a>.
+        </p>
+        <p>
+          I was previously an undergraduate student at the University of Science and Technology of China (USTC).
+          You can find my CV
+          <a class="" href="whuang_cv.pdf" target="_blank" rel="noopener">here</a>.
+        </p>
+        <div class="cv-buttons" role="group" aria-label="CV actions">
+          <a class="btn" href="whuang_cv.pdf" target="_blank" rel="noopener">View CV (PDF)</a>
+          <a class="btn secondary" href="whuang_cv.pdf" download>Download CV</a>
+        </div>
+      </section>
 
+      <section id="research" class="card" aria-labelledby="research-h2">
+        <h2 id="research-h2">Research Interests</h2>
+        <p>
+          I am broadly interested in analysis and partial differential equations. My current research focuses on nonlinear
+          dispersive PDEs and kinetic equations, especially long-time behavior and stability phenomena.
+        </p>
+      </section>
 
-<hr>
+      <section id="publications" class="card" aria-labelledby="pubs-h2">
+        <h2 id="pubs-h2">Papers &amp; Preprints</h2>
+        <ol>
+          <li>
+            <span>Scattering of the Vlasov–Riesz system in three dimensions</span>
+            (with H. Kwon)
+            — <a href="https://arxiv.org/abs/2407.16919" target="_blank" rel="noopener">arXiv:2407.16919</a>
+          </li>
+          <li>
+            <span>Modified wave operators for the Hartree equation with repulsive Coulomb potential</span>
+            — <a href="https://arxiv.org/abs/2411.02737" target="_blank" rel="noopener">arXiv:2411.02737</a>
+          </li>
+          <li>
+            <span>The Vlasov–Poisson system with a perfectly conducting wall: Convex domains</span>
+            (with B. Pausader and M. Suzuki)
+            — <a href="https://arxiv.org/abs/2412.13434" target="_blank" rel="noopener">arXiv:2412.13434</a>
+          </li>
+        </ol>
+        <p class="small">Tip: include journal info and DOIs here when available.</p>
+      </section>
 
+      <section id="teaching" class="card" aria-labelledby="teach-h2">
+        <h2 id="teach-h2">Teaching</h2>
 
-<h2>
-Teaching
-</h2>
-<h3>At Brown Univerisity </h3>
-<ul>
-<li>Teaching Assistant - MATH 0180 Calculus III - 2024 Spring </li>
-<li>Teaching Assistant - MATH 0180 Calculus III- 2023 Fall </li>
-<li>Teaching Assistant - MATH 0100 Calculus II - 2023 Spring </li>
-</ul>
+        <h3>Brown University</h3>
+        <ul>
+          <li>Teaching Assistant — MATH 0180 Calculus III — Spring 2024</li>
+          <li>Teaching Assistant — MATH 0180 Calculus III — Fall 2023</li>
+          <li>Teaching Assistant — MATH 0100 Calculus II — Spring 2023</li>
+        </ul>
 
+        <h3>University of Science and Technology of China</h3>
+        <ul>
+          <li>Teaching Assistant — Riemannian Geometry — Spring 2022</li>
+          <li>Teaching Assistant — Topology — Spring 2021, Spring 2022</li>
+          <li>Teaching Assistant — Differential Geometry — Fall 2021</li>
+        </ul>
+      </section>
 
-<h3>At University of Science and Technology of China </h3>  
-<ul>
-<li>Teaching Assistant - Riemannian Geometry - 2022 Spring </li>
-<li>Teaching Assistant - Topology - 2021, 2022 Spring </li>
-<li>Teaching Assistant - Differential Geometry - 2021 Fall</li>
-</ul>
+      <section id="contact" class="card" aria-labelledby="contact-h2">
+        <h2 id="contact-h2">Contact</h2>
+        <p>
+          <em>Optional:</em> add your academic email, office, and links (Google Scholar, ORCID, arXiv, GitHub).
+        </p>
+        <ul>
+          <!-- Replace # with your links when ready -->
+          <!-- <li>Email: <a href="mailto:firstname_lastname@brown.edu">firstname_lastname@brown.edu</a></li> -->
+          <!-- <li>Google Scholar: <a href="#" target="_blank" rel="noopener">Profile</a></li> -->
+          <!-- <li>ORCID: <a href="#" target="_blank" rel="noopener">0000-0000-0000-0000</a></li> -->
+          <!-- <li>GitHub: <a href="#" target="_blank" rel="noopener">username</a></li> -->
+        </ul>
+      </section>
+    </main>
 
-<BR>
-<BR>
-</div>
- 
- 
- </BODY>
-</HTML>
+    <footer>
+      <div>&copy; <span id="year"></span> Wenrui Huang. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    // current year for footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
 
 
