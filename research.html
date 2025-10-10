@@ -8,7 +8,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=EB+Garamond:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root { --bg:#ffffff; --text:#1b1b1b; --muted:#666666; --link:#0f3d8a; --border:#e8e8ea; --maxw:860px; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0f1116; --text:#e8eaed; --muted:#b7bdc9; --link:#87a8ff; --border:#2a2d36; } }
+    html{scroll-behavior:smooth}*,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:"EB Garamond",ui-serif,Georgia,serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:18px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    .container{max-width:var(--maxw);margin:0 auto;padding:2.2rem 1.2rem 3rem}
+    h1.title{font-family:Cinzel,ui-serif,serif;font-weight:400;font-size:clamp(2rem,2.4rem + 1vw,3rem);margin:0;letter-spacing:.3px}
+    .subtitle{margin-top:.4rem;color:var(--muted);font-size:1.05rem}
+    .nav{margin-top:1rem;display:flex;gap:0;justify-content:center;flex-wrap:wrap}
+    .nav a{display:inline-block;padding:0 .2rem;border:0;border-radius:0;text-decoration:none;font-size:.95rem;color:var(--link)}
+    .nav a + a::before{content:"•";color:var(--muted);opacity:.85;margin:0 .45rem 0 .25rem}
+    .nav a:hover{text-decoration:underline}
+    .nav a[aria-current="page"]{text-decoration:underline;text-decoration-thickness:.12em;text-underline-offset:.18em}
+    main section + section{border-top:1px solid var(--border);padding-top:1.1rem}
+    h2{font-family:Cinzel,ui-serif,serif;font-weight:400;font-size:1.35rem;margin:0 0 .6rem;letter-spacing:.2px}
+    h2::after{content:"";display:block;width:44px;height:1px;background:linear-gradient(90deg,var(--link),transparent);opacity:.25;margin-top:.45rem}
+    p{margin:.5rem 0}
+    .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1rem;align-items:start}
+    .headshot{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;border:0}
+    @media (max-width:720px){.about-grid{grid-template-columns:1fr}}
+    ol,ul{padding-left:1.15rem}
+    li + li{margin-top:.35rem}
+    .list-separated li + li{border-top:1px dashed var(--border);padding-top:.35rem;margin-top:.35rem}
+    footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.95rem}
+    .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{position:static;width:auto;height:auto;padding:.4rem .6rem;background:#0000;border:1px solid var(--border);border-radius:8px}
+    @media print{body{background:#fff;color:#000}.nav a + a::before{color:#999}a[href^="http"]::after{content:" (" attr(href) ")";font-size:.9em}}
+  </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -42,3 +69,4 @@
   <script> (function(){ try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(_){} })(); </script>
 </body>
 </html>
+
