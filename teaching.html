@@ -36,6 +36,53 @@
     .skip:focus{position:static;width:auto;height:auto;padding:.4rem .6rem;background:#0000;border:1px solid var(--border);border-radius:8px}
     @media print{body{background:#fff;color:#000}.nav a + a::before{color:#999}a[href^="http"]::after{content:" (" attr(href) ")";font-size:.9em}}
   </style>
+  <style>
+/* NAV — bigger & roomier, still minimal */
+.nav {
+  margin-top: 1.1rem;
+  display: flex;
+  gap: .5rem .8rem;              /* 更宽松的间距 */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav a {
+  display: inline-block;
+  font-size: 1.08rem;            /* 比原来更大一点 */
+  line-height: 1;
+  padding: .45rem .9rem;         /* 增加上下左右留白 */
+  border-radius: 999px;          /* 轻圆角胶囊（仅背景，无边框） */
+  text-decoration: none;
+  letter-spacing: .02em;
+  color: var(--link);
+}
+.nav a + a::before { content: none; } /* 取消分隔点，让版面更干净 */
+
+.nav a:hover {
+  background: rgba(15, 61, 138, .08);   /* 浅浅的底色 hover */
+  text-decoration: none;
+}
+.nav a[aria-current="page"] {
+  background: rgba(15, 61, 138, .14);   /* 当前页更明显，但仍很轻 */
+  text-decoration: none;
+}
+
+/* 小屏时略微收紧，保证不挤行 */
+@media (max-width: 480px) {
+  .nav { gap: .35rem .5rem; }
+  .nav a { font-size: 1.02rem; padding: .4rem .7rem; }
+}
+
+/* 深色模式下的底色微调，保证对比 */
+@media (prefers-color-scheme: dark) {
+  .nav a:hover {
+    background: rgba(135, 168, 255, .12);
+  }
+  .nav a[aria-current="page"] {
+    background: rgba(135, 168, 255, .18);
+  }
+}
+</style>
+
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
