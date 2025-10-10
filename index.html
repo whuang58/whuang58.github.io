@@ -9,88 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=EB+Garamond:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #1b1b1b;
-      --muted: #666666;
-      --link: #0f3d8a;
-      --border: #e8e8ea;
-      --card: #fafafa;
-      --radius: 16px;
-      --maxw: 820px;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0f1116;
-        --text: #e8eaed;
-        --muted: #b7bdc9;
-        --link: #87a8ff;
-        --border: #2a2d36;
-        --card: #161a20;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-    *, *::before, *::after { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "EB Garamond", ui-serif, Georgia, serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      font-size: 18px;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    a { color: var(--link); text-decoration-thickness: .08em; text-underline-offset: .18em; }
-    a:hover { text-decoration: underline; }
-
-    .container { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3rem; }
-
-    header { margin-bottom: 1.6rem; text-align: center; }
-    .title { font-family: Cinzel, ui-serif, serif; font-weight: 400; font-size: clamp(2rem, 2.4rem + 1vw, 3rem); margin: 0; letter-spacing: .3px; }
-    .subtitle { margin-top: .4rem; color: var(--muted); font-size: 1.05rem; }
-
-    nav { margin-top: 1rem; display: flex; gap: 0; justify-content: center; flex-wrap: wrap; }
-    nav a { display: inline-block; padding: 0 .2rem; border: 0; border-radius: 0; text-decoration: none; font-size: .95rem; }
-    nav a:hover { text-decoration: underline; }
-
-    .card { background: none; border: 0; border-radius: 0; padding: 0; margin-top: 1.6rem; }
-
-    h2 { font-family: Cinzel, ui-serif, serif; font-weight: 400; font-size: 1.35rem; margin: 0 0 .6rem; letter-spacing: .2px; }
-    h3 { font-family: Cinzel, ui-serif, serif; font-weight: 400; font-size: 1.1rem; margin: .8rem 0 .3rem; }
-    p { margin: .5rem 0; }
-
-    .about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1rem; align-items: start; }
-    .headshot { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 12px; border: 0; }
-    .muted { color: var(--muted); }
-
-    ol, ul { padding-left: 1.15rem; }
-    li + li { margin-top: .35rem; }
-
-    footer { margin-top: 2rem; padding-top: 1rem; border-top: 0; color: var(--muted); font-size: .95rem; }
-
-    .skip { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-    .skip:focus { position: static; width: auto; height: auto; padding: .4rem .6rem; background: var(--card); border: 1px solid var(--border); border-radius: 8px; }
-
-    @media (max-width: 720px) { .about-grid { grid-template-columns: 1fr; } }
-
-    @media print {
-      body { background: #fff; color: #000; }
-      .card, nav { border: 0; box-shadow: none; background: none; }
-      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .9em; }
-    }
-    /* subtle hierarchy */
-    main section + section { border-top: 1px solid var(--border); padding-top: 1.1rem; }
-    h2::after { content: ""; display: block; width: 44px; height: 1px; background: linear-gradient(90deg, var(--link), transparent); opacity: .25; margin-top: .45rem; }
-    nav a + a::before { content: "•"; color: var(--muted); opacity: .85; margin: 0 .45rem 0 .25rem; }
-    #research ol li + li { border-top: 1px dashed var(--border); padding-top: .35rem; margin-top: .35rem; }
-  </style>
-
-  <!-- Structured data for richer previews -->
+  <link rel="stylesheet" href="style.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -104,89 +23,43 @@
   }
   </script>
 </head>
-
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <div class="container">
     <header>
       <h1 class="title">Wenrui Huang</h1>
       <p class="subtitle">PhD Student · Department of Mathematics, Brown University</p>
-      <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Papers & Preprints</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#talks">Talks</a>
-        <a href="#contact">Contact</a>
+      <nav aria-label="Primary" class="nav">
+        <a href="index.html" aria-current="page">About</a>
+        <a href="research.html">Papers & Preprints</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="talks.html">Talks</a>
       </nav>
     </header>
 
     <main id="main">
-      <section id="about" class="card" aria-labelledby="h-about">
+      <section id="about" aria-labelledby="h-about">
         <h2 id="h-about">About</h2>
         <div class="about-grid">
           <div>
             <p>I am a fourth-year PhD student in the Department of Mathematics at Brown University. My advisor is <a href="https://www.math.brown.edu/bpausade/" target="_blank" rel="noopener">Benoît Pausader</a>.</p>
             <p>I completed my undergraduate studies at the University of Science and Technology of China (USTC). You can find my CV <a href="CV_hwr.pdf" target="_blank" rel="noopener">here</a>.</p>
             <p>I am broadly interested in analysis and partial differential equations. My current research focuses on nonlinear dispersive PDEs and kinetic equations, especially long-time behavior and stability problems.</p>
+            <p><strong>Contact:</strong> <a href="mailto:wenrui_huang@brown.edu">wenrui_huang@brown.edu</a></p>
           </div>
           <img class="headshot" src="wenrui.png" alt="Portrait of Wenrui Huang" loading="lazy" />
         </div>
       </section>
-
-      <section id="research" class="card" aria-labelledby="h-research">
-        <h2 id="h-research">Papers &amp; Preprints</h2>
-        <ol>
-          <li>Scattering of the Vlasov–Riesz system in three dimensions (with H. Kwon) — <a href="https://arxiv.org/abs/2407.16919" target="_blank" rel="noopener">arXiv:2407.16919</a></li>
-          <li>Modified wave operators for the Hartree equation with repulsive Coulomb potential — <a href="https://arxiv.org/abs/2411.02737" target="_blank" rel="noopener">arXiv:2411.02737</a></li>
-          <li>The Vlasov–Poisson system with a perfectly conducting wall: Convex domains (with B. Pausader and M. Suzuki) — <a href="https://arxiv.org/abs/2412.13434" target="_blank" rel="noopener">arXiv:2412.13434</a></li>
-        </ol>
-      </section>
-
-      <section id="teaching" class="card" aria-labelledby="h-teaching">
-        <h2 id="h-teaching">Teaching</h2>
-        <h3>Brown University</h3>
-        <ul>
-          <li>Teaching Assistant — MATH 0180 Calculus III — Spring 2024</li>
-          <li>Teaching Assistant — MATH 0180 Calculus III — Fall 2023</li>
-          <li>Teaching Assistant — MATH 0100 Calculus II — Spring 2023</li>
-        </ul>
-        <h3>University of Science and Technology of China</h3>
-        <ul>
-          <li>Teaching Assistant — Riemannian Geometry — Spring 2022</li>
-          <li>Teaching Assistant — Topology — Spring 2021, Spring 2022</li>
-          <li>Teaching Assistant — Differential Geometry — Fall 2021</li>
-        </ul>
-      </section>
-
-      <section id="talks" class="card" aria-labelledby="h-talks">
-        <h2 id="h-talks">Talks</h2>
-        <p>See contact below for inquiries and invitations.</p>
-      </section>
-
-      <section id="contact" class="card" aria-labelledby="h-contact">
-        <h2 id="h-contact">Contact</h2>
-        <p>Email: <a href="mailto:wenrui_huang@brown.edu">wenrui_huang@brown.edu</a></p>
-      </section>
     </main>
 
     <footer>
-      <div class="container" style="padding:0">
-        <small class="muted">© <span id="year"></span> Wenrui Huang. All rights reserved.</small>
-      </div>
+      <small class="muted">© <span id="year"></span> Wenrui Huang. All rights reserved.</small>
     </footer>
   </div>
 
   <script>
-    // Update copyright year without depending on frameworks.
     (function(){ try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(_){} })();
-    // Respect users who prefer reduced motion — disable smooth scroll.
     (function(){ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.style.scrollBehavior = 'auto'; } })();
   </script>
 </body>
 </html>
-
-
-
-
-
-
