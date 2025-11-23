@@ -1,7 +1,7 @@
 /* Root theme */
 :root {
   --bg: #ffffff;
-  #000: #1b1b1b;
+  --text: #000;
   --muted: #666666;
   --link: #0f3d8a;
   --border: #e8e8ea;
