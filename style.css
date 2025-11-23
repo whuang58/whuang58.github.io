@@ -32,6 +32,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+/* 全站段落更松 */
+p { margin: 0.95rem 0; }
+
+/* 或者：只作用于 About 里的段落 */
+#about p + p { margin-top: 0.95rem; }   /* 第二段起每段上方加距 */
 
 .container { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3rem; }
 
