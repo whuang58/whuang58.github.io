@@ -26,8 +26,10 @@ body {
   color: var(--text);
   line-height: 1.7;
   font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-weight: 450;                /* slightly heavier body for darker look */
+  font-optical-sizing: auto;       /* variable font optical sizing */
+  -webkit-font-smoothing: auto;    /* darker rendering on macOS */
+  -moz-osx-font-smoothing: auto;
   text-rendering: optimizeLegibility;
 }
 
@@ -36,7 +38,7 @@ body {
 /* Typography */
 h1.title {
   font-family: Cinzel, ui-serif, serif;
-  font-weight: 600; /* a touch heavier against deep black */
+  font-weight: 600; /* heavier against deep black */
   font-size: clamp(2rem, 2.4rem + 1vw, 3rem);
   margin: 0;
   letter-spacing: .01em;
@@ -63,7 +65,9 @@ main section + section { border-top: 1px solid var(--border); padding-top: 1.1re
 h2 { font-family: Cinzel, ui-serif, serif; font-weight: 600; font-size: 1.35rem; margin: 0 0 .6rem; letter-spacing: .01em; }
 h2::after { content: ""; display: block; width: 44px; height: 1px; background: linear-gradient(90deg, var(--link), transparent); opacity: .25; margin-top: .45rem; }
 
-p { margin: .5rem 0; }
+p { margin: .5rem 0; font-weight: 450; }
+/* Denser text weight for lists/definitions */
+li, dd { font-weight: 450; }
 
 /* About */
 .about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1rem; align-items: start; }
