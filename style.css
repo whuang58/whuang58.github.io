@@ -1,7 +1,7 @@
 /* Root theme */
 :root {
   --bg: #ffffff;
-  --text: #000000;      /* deepest black for max contrast */
+  --text: #0b0d11;      /* deepest black for max contrast */
   --muted: #3e4147;     /* darker muted for better hierarchy */
   --link: #0d3a82;      /* slightly deeper link */
   --border: #dde1e8;
