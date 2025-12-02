@@ -95,20 +95,23 @@ footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border
   .nav a + a::before { color: #999; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .9em; }
 }
-/* 论文题目链接样式：高亮、无下划线 */
+
+/* 论文题目：保留高亮颜色和加粗，去掉背景框 */
+
 .paper-link {
-  text-decoration: none;          /* 去掉下划线 */
-  color: #1c4f8a;                 /* 稍微亮一点的蓝色，你可以调 */
-  font-weight: 500;               /* 比正文略粗一点 */
-  background: rgba(28, 79, 138, 0.06);  /* 很浅的底色高亮 */
-  padding: 0.08em 0.18em;
-  border-radius: 0.18em;
-  transition: background 0.15s ease, color 0.15s ease;
+  text-decoration: none;     /* 没有下划线 */
+  color: #1c4f8a;            /* 高亮颜色 */
+  font-weight: 500;          /* 比正文略粗一点 */
+  background: none;          /* 取消背景色块 */
+  padding: 0;                /* 取消额外的内边距 */
+  border-radius: 0;          /* 没有圆角框 */
 }
 
 .paper-link:hover,
 .paper-link:focus-visible {
-  background: rgba(28, 79, 138, 0.16);  /* hover 时稍微更明显一点 */
-  outline: none;
+  color: #163a63;            /* hover 时稍微深一点 */
+  background: none;          /* hover 也不要色块 */
+  outline: none;             /* 取消浏览器默认的虚线框 */
 }
+
 
