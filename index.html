@@ -3,34 +3,43 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wenrui Huang — Homepage</title>
   <meta name="description" content="Wenrui Huang — PhD student in Mathematics. Research in analysis, dispersive PDEs, and kinetic equations." />
   <meta name="author" content="Wenrui Huang" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=EB+Garamond:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Wenrui Huang","image":"wenrui2.png","jobTitle":"PhD Student","affiliation":{"@type":"CollegeOrUniversity","name":"Brown University"},"email":"mailto:wenrui_huang@brown.edu","url":"https://example.com/"}
   </script>
 </head>
+
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
   <div class="container">
     <header>
       <h1 class="title">Wenrui Huang</h1>
       <p class="subtitle">PhD Student · Department of Mathematics, Brown University</p>
+
+      <!-- 单页导航：改成锚点，不再跳转到其它 html -->
       <nav aria-label="Primary" class="nav">
-        <a href="index.html" aria-current="page">About</a>
-        <a href="research.html">Papers & Preprints</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="talks.html">Talks</a>
+        <a href="#about">About</a>
+        <a href="#research">Papers &amp; Preprints</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#talks">Talks</a>
       </nav>
     </header>
 
     <main id="main">
+      <!-- About -->
       <section id="about" aria-labelledby="h-about">
         <h2 id="h-about">About</h2>
         <div class="about-grid">
@@ -43,17 +52,111 @@
             <p></p>
             <p><strong>Contact:</strong> wenrui_huangAtbrownDotedu</p>
           </div>
+
           <img class="headshot" src="wenrui2.png" alt="Portrait of Wenrui Huang" loading="lazy" />
         </div>
       </section>
-    </main>
 
-  
+      <!-- Papers & Preprints -->
+      <section id="research" aria-labelledby="h-research">
+        <h2 id="h-research">Papers &amp; Preprints</h2>
+
+        <ol class="list-separated">
+          <li>
+            <a class="paper-link" href="https://arxiv.org/abs/2407.16919" target="_blank" rel="noopener">
+              Scattering of the Vlasov–Riesz system in three dimensions
+            </a>
+            (with H. Kwon) — arXiv:2407.16919
+          </li>
+
+          <li>
+            <a class="paper-link" href="https://arxiv.org/abs/2411.02737" target="_blank" rel="noopener">
+              Modified wave operators for the Hartree equation with repulsive Coulomb potential
+            </a>
+            — arXiv:2411.02737
+          </li>
+
+          <li>
+            <a class="paper-link" href="https://arxiv.org/abs/2412.13434" target="_blank" rel="noopener">
+              The Vlasov–Poisson system with a perfectly conducting wall: Convex domains
+            </a>
+            (with B. Pausader and M. Suzuki) — arXiv:2412.13434
+          </li>
+
+          <li>
+            <a class="paper-link" href="https://arxiv.org/abs/2601.10030" target="_blank" rel="noopener">
+              Stability and instability of small BGK waves
+            </a>
+            (with D. Bian, E. Grenier and B. Pausader) — arXiv:2601.10030
+          </li>
+
+          <li>
+            Scattering map for the Vlasov-Poisson system with a harmonic repulsive potential (with H. Kwon) (in prep).
+          </li>
+
+          <li>
+            Quantitative linear Landau damping near stable BGK equilibria (with D. Bian, E. Grenier and B. Pausader) (in prep).
+          </li>
+        </ol>
+      </section>
+
+      <!-- Teaching -->
+      <section id="teaching" aria-labelledby="h-teaching">
+        <h2 id="h-teaching">Teaching</h2>
+
+        <h3>Brown University</h3>
+        <ul>
+          <li>Fall 2025 — TA — MATH 0190 Calculus II (Physics/Engineering)</li>
+          <li>Spring 2024 — TA — MATH 0180 Calculus III</li>
+          <li>Fall 2023 — TA — MATH 0180 Calculus III</li>
+          <li>Spring 2023 — TA — MATH 0100 Calculus II</li>
+        </ul>
+
+        <h3>University of Science and Technology of China</h3>
+        <ul>
+          <li>Spring 2022 — TA — Riemannian Geometry</li>
+          <li>Spring 2021, Spring 2022 — TA — Topology</li>
+          <li>Fall 2021 — TA — Differential Geometry</li>
+        </ul>
+      </section>
+
+      <!-- Talks -->
+      <section id="talks" aria-labelledby="h-talks">
+        <h2 id="h-talks">Talks</h2>
+        <p>For invitations and recent talks, please email me. A full list will be posted here.</p>
+      </section>
+    </main>
   </div>
 
   <script>
     (function(){ try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(_){} })();
     (function(){ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.style.scrollBehavior = 'auto'; } })();
+
+    // 可选：滚动时自动给导航高亮（aria-current）
+    (function(){
+      const links = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
+      const map = new Map(links.map(a => [a.getAttribute('href'), a]));
+      const sections = links
+        .map(a => document.querySelector(a.getAttribute('href')))
+        .filter(Boolean);
+
+      if (!('IntersectionObserver' in window) || sections.length === 0) return;
+
+      const obs = new IntersectionObserver((entries) => {
+        // 选取当前最“在视口里”的 section
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+
+        links.forEach(a => a.removeAttribute('aria-current'));
+        const id = '#' + visible.target.id;
+        const a = map.get(id);
+        if (a) a.setAttribute('aria-current', 'page');
+      }, { root: null, threshold: [0.2, 0.35, 0.5, 0.65] });
+
+      sections.forEach(s => obs.observe(s));
+    })();
   </script>
 </body>
 </html>
