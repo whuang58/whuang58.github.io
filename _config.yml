@@ -1,0 +1,6 @@
+title: Wenrui Huang
+description: Wenrui Huang — PhD student in Mathematics. Research in analysis, dispersive PDEs, and kinetic equations.
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
