@@ -5,8 +5,8 @@ title: Homepage
 
 ## About
 
-<div class="about-grid">
-<div>
+<div class="about-grid" markdown="1">
+<div markdown="1">
 
 I am a fourth-year PhD student in the Department of Mathematics at Brown University. My advisor is [Benoît Pausader](https://www.math.brown.edu/bpausade/).
 
@@ -17,7 +17,7 @@ I am interested in analysis and partial differential equations. My current resea
 **Contact:** wenrui_huangAtbrownDotedu
 
 </div>
-<div>
+<div markdown="1">
 
 ![Portrait of Wenrui Huang](wenrui2.png){:.headshot-inline}
 
