@@ -71,6 +71,7 @@
     
     #set par(justify: true)
     #set enum(spacing: 10pt)
+   + In preparation 
    + #link("https://arxiv.org/abs/2602.21344")[
     #text(fill: title-blue, style: "italic")[
       Scattering map for the Vlasov-Poisson system with a repulsive harmonic potential

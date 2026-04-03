@@ -27,19 +27,18 @@ I am interested in analysis and partial differential equations. My current resea
 ## Publications & Preprints
 
 1. [Scattering map for the Vlasov-Poisson system with a harmonic repulsive potential](https://arxiv.org/abs/2602.21344)  
-   (with H. Kwon) — arXiv:2602.21344
+   (with H. Kwon), arXiv:2602.21344
 
 2. [Stability and instability of small BGK waves](https://arxiv.org/abs/2601.10030)  
-   (with D. Bian, E. Grenier and B. Pausader) — arXiv:2601.10030
+   (with D. Bian, E. Grenier and B. Pausader), arXiv:2601.10030
 
 3. [The Vlasov–Poisson system with a perfectly conducting wall: Convex domains](https://arxiv.org/abs/2412.13434)  
-   (with B. Pausader and M. Suzuki) — arXiv:2412.13434
+   (with B. Pausader and M. Suzuki), arXiv:2412.13434
 
-4. [Modified wave operators for the Hartree equation with repulsive Coulomb potential](https://arxiv.org/abs/2411.02737)  
-   — arXiv:2411.02737
+4. [Modified wave operators for the Hartree equation with repulsive Coulomb potential](https://arxiv.org/abs/2411.02737), arXiv:2411.02737
 
 5. [Scattering of the Vlasov–Riesz system in three dimensions](https://arxiv.org/abs/2407.16919)  
-   (with H. Kwon) — arXiv:2407.16919
+   (with H. Kwon), arXiv:2407.16919
 
 ## Teaching
 
