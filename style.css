@@ -1,4 +1,4 @@
-/* Minimal Jekyll style matching your current site */
+/* Jekyll site style */
 :root {
   --bg: #ffffff;
   --text: #0b0d11;
@@ -85,6 +85,10 @@ main > * + * {
   margin-top: 1rem;
 }
 
+section + section {
+  margin-top: 1.5rem;
+}
+
 h2 {
   font-family: Cinzel, ui-serif, serif;
   font-weight: 600;
@@ -127,24 +131,26 @@ a:hover { text-decoration: underline; }
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .about-text {
-  flex: 1 1 0;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
 .about-photo {
   flex: 0 0 280px;
+  width: 280px;
 }
 
+.about-photo img,
 .markdown-body img.headshot-inline,
 img.headshot-inline {
   display: block;
-  width: 100%;
-  max-width: 280px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  width: 280px;
+  max-width: 100%;
+  height: auto;
   border-radius: 12px;
   margin: 0;
 }
@@ -155,12 +161,14 @@ img.headshot-inline {
   }
 
   .about-photo {
+    width: 100%;
     flex: none;
   }
 
+  .about-photo img,
   .markdown-body img.headshot-inline,
   img.headshot-inline {
-    max-width: 300px;
+    width: min(300px, 100%);
   }
 }
 
