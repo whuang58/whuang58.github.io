@@ -85,10 +85,6 @@ main > * + * {
   margin-top: 1rem;
 }
 
-section + section {
-  margin-top: 1.5rem;
-}
-
 h2 {
   font-family: Cinzel, ui-serif, serif;
   font-weight: 600;
@@ -126,50 +122,32 @@ a {
 
 a:hover { text-decoration: underline; }
 
-.about-flex {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1.5rem;
-  width: 100%;
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 1rem;
+  align-items: start;
 }
 
-.about-text {
-  flex: 1 1 auto;
+.about-grid > div {
   min-width: 0;
 }
 
-.about-photo {
-  flex: 0 0 280px;
-  width: 280px;
+@media (max-width: 720px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.about-photo img,
 .markdown-body img.headshot-inline,
 img.headshot-inline {
   display: block;
-  width: 280px;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   border-radius: 12px;
   margin: 0;
-}
-
-@media (max-width: 720px) {
-  .about-flex {
-    flex-direction: column-reverse;
-  }
-
-  .about-photo {
-    width: 100%;
-    flex: none;
-  }
-
-  .about-photo img,
-  .markdown-body img.headshot-inline,
-  img.headshot-inline {
-    width: min(300px, 100%);
-  }
 }
 
 .skip {
