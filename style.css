@@ -1,12 +1,13 @@
-/* Root theme */
+/* Minimal Jekyll style matching your current site */
 :root {
   --bg: #ffffff;
-  --text: #0b0d11;      /* deepest black for max contrast */
-  --muted: #3e4147;     /* darker muted for better hierarchy */
-  --link: #0d3a82;      /* slightly deeper link */
+  --text: #0b0d11;
+  --muted: #3e4147;
+  --link: #0d3a82;
   --border: #dde1e8;
   --maxw: 860px;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0f1116;
@@ -18,100 +19,147 @@
 }
 
 html { scroll-behavior: smooth; }
-*, *::before, *::after { box-sizing: border-box; }
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
 body {
   margin: 0;
-  font-family: "Source Serif 4", Georgia, serif; /* clearer serif body */
+  font-family: "Source Serif 4", Georgia, serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.75;              /* slightly taller for serif readability */
+  line-height: 1.75;
   font-size: 18px;
-  font-weight: 500;               /* deeper/darker body */
-  font-optical-sizing: auto;      /* variable font optical sizing */
+  font-weight: 500;
+  font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-/* 全站段落更松：作用于所有 p */
-p { margin: .75rem 0; }
 
-/* 或者：只作用于 About 里的段落（第二段起每段上方加距） */
-#about p + p { margin-top: 1.1rem; }
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2.2rem 1.2rem 3rem;
+}
 
-.container { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3rem; }
-
-/* Typography */
 h1.title {
   font-family: Cinzel, ui-serif, serif;
-  font-weight: 600; /* heavier against deep black */
+  font-weight: 600;
   font-size: clamp(2rem, 2.4rem + 1vw, 3rem);
   margin: 0;
   letter-spacing: .01em;
 }
-.subtitle { margin-top: .45rem; color: var(--muted); font-size: 1.05rem; }
 
-/* Nav — roomier & minimal */
-.nav { margin-top: 1.1rem; display: flex; gap: .5rem .8rem; justify-content: center; flex-wrap: wrap; }
-.nav a { display: inline-block; font-size: 1.08rem; line-height: 1; padding: .45rem .9rem; border-radius: 999px; text-decoration: none; letter-spacing: .005em; color: var(--link); }
-.nav a + a::before { content: none; }
-.nav a:hover { background: rgba(13,58,130,.08); text-decoration: none; }
-.nav a[aria-current="page"] { background: rgba(13,58,130,.14); text-decoration: none; }
-@media (prefers-color-scheme: dark) {
-  .nav a:hover { background: rgba(155,182,255,.12); }
-  .nav a[aria-current="page"] { background: rgba(155,182,255,.18); }
-}
-@media (max-width: 480px) {
-  .nav { gap: .35rem .5rem; }
-  .nav a { font-size: 1.02rem; padding: .4rem .7rem; }
+.subtitle {
+  margin-top: .45rem;
+  color: var(--muted);
+  font-size: 1.05rem;
 }
 
-/* Sections & subtle hierarchy */
-main section + section { border-top: 1px solid var(--border); padding-top: 1.1rem; }
-h2 { font-family: Cinzel, ui-serif, serif; font-weight: 600; font-size: 1.35rem; margin: 0 0 .6rem; letter-spacing: .01em; }
-h2::after { content: ""; display: block; width: 44px; height: 1px; background: linear-gradient(90deg, var(--link), transparent); opacity: .25; margin-top: .45rem; }
+.nav {
+  margin-top: 1.1rem;
+  display: flex;
+  gap: .5rem .8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  display: inline-block;
+  font-size: 1.08rem;
+  line-height: 1;
+  padding: .45rem .9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--link);
+}
+
+.nav a:hover {
+  background: rgba(13,58,130,.08);
+  text-decoration: none;
+}
+
+main > * + * {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-family: Cinzel, ui-serif, serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin: 1.6rem 0 .6rem;
+  letter-spacing: .01em;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--link), transparent);
+  opacity: .25;
+  margin-top: .45rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: .35rem;
+  font-size: 1.08rem;
+}
 
 p { margin: .55rem 0; }
 
-/* About */
-.about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1rem; align-items: start; }
-.headshot { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 12px; border: 0; }
-@media (max-width: 720px) { .about-grid { grid-template-columns: 1fr; } }
+ol, ul { padding-left: 1.2rem; }
 
-/* Lists */
-ol, ul { padding-left: 1.15rem; }
 li + li { margin-top: .35rem; }
-.list-separated li + li { border-top: 1px dashed var(--border); padding-top: .35rem; margin-top: .35rem; }
 
-/* Footer */
-footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .95rem; }
-
-/* A11y */
-.skip { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-.skip:focus { position: static; width: auto; height: auto; padding: .4rem .6rem; background: #0000; border: 1px solid var(--border); border-radius: 8px; }
-
-/* Print */
-@media print {
-  body { background: #fff; color: #000; }
-  .nav a + a::before { color: #999; }
-  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .9em; }
+a {
+  color: var(--link);
+  text-decoration: none;
 }
 
-/* 论文题目：保留高亮颜色和加粗，去掉背景框 */
+a:hover { text-decoration: underline; }
 
-.paper-link {
-  text-decoration: none;     /* 没有下划线 */
-  color: #1c4f8a;            /* 高亮颜色 */
-  font-weight: 500;          /* 比正文略粗一点 */
-  background: none;          /* 取消背景色块 */
-  padding: 0;                /* 取消额外的内边距 */
-  border-radius: 0;          /* 没有圆角框 */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 1rem;
+  align-items: start;
 }
 
-.paper-link:hover,
-.paper-link:focus-visible {
-  color: #163a63;            /* hover 时稍微深一点 */
-  background: none;          /* hover 也不要色块 */
-  outline: none;             /* 取消浏览器默认的虚线框 */
+@media (max-width: 720px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
+.markdown-body img.headshot-inline,
+img.headshot-inline {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0;
+}
 
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: .4rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
