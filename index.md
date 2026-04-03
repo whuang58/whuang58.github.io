@@ -5,8 +5,8 @@ title: Homepage
 
 ## About
 
-<div class="about-grid">
-  <div>
+<div class="about-flex">
+  <div class="about-text">
     <p>
       I am a fourth-year PhD student in the Department of Mathematics at Brown University.
       My advisor is <a href="https://www.math.brown.edu/bpausade/">Benoît Pausader</a>.
@@ -26,7 +26,7 @@ title: Homepage
     <p><strong>Contact:</strong> wenrui_huangAtbrownDotedu</p>
   </div>
 
-  <div>
+  <div class="about-photo">
     <img class="headshot-inline" src="wenrui2.png" alt="Portrait of Wenrui Huang" />
   </div>
 </div>

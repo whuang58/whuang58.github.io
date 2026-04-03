@@ -122,32 +122,46 @@ a {
 
 a:hover { text-decoration: underline; }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 300px);
-  gap: 1.2rem;
-  align-items: start;
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
-.about-grid > div {
+.about-text {
+  flex: 1 1 0;
   min-width: 0;
 }
 
-@media (max-width: 720px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
+.about-photo {
+  flex: 0 0 280px;
 }
 
 .markdown-body img.headshot-inline,
 img.headshot-inline {
   display: block;
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 12px;
   margin: 0;
+}
+
+@media (max-width: 720px) {
+  .about-flex {
+    flex-direction: column-reverse;
+  }
+
+  .about-photo {
+    flex: none;
+  }
+
+  .markdown-body img.headshot-inline,
+  img.headshot-inline {
+    max-width: 300px;
+  }
 }
 
 .skip {
