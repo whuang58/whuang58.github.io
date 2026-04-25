@@ -14,13 +14,8 @@ I completed my undergraduate studies at the University of Science and Technology
 
 I am interested in analysis and partial differential equations. My current research focuses on nonlinear dispersive PDEs and kinetic equations, especially long-time behavior and stability problems.
 
-</div>
-<div class="about-notes" markdown="1">
+**Contact:** wenrui_huangAtbrownDotedu
 
-- Brown University Mathematics
-- Advisor: [Benoît Pausader](https://www.math.brown.edu/bpausade/)
-- Research: analysis, PDE, kinetic equations
-- Contact: wenrui_huangAtbrownDotedu
 </div>
 </div>
 
@@ -38,7 +33,7 @@ I am interested in analysis and partial differential equations. My current resea
 4. [Modified wave operators for the Hartree equation with repulsive Coulomb potential](https://arxiv.org/abs/2411.02737), arXiv:2411.02737
 
 5. [Scattering of the Vlasov–Riesz system in three dimensions](https://arxiv.org/abs/2407.16919)  
-   (with H. Kwon), to appear in Annales Henri Poincaré. arXiv:2407.16919
+   (with H. Kwon), to appear in **Annales Henri Poincaré**. arXiv:2407.16919
 
 ## Teaching
 
