@@ -6,7 +6,7 @@ title: Homepage
 ## About
 
 <div class="about-grid" markdown="1">
-<div markdown="1">
+<div class="about-copy" markdown="1">
 
 I am a fourth-year PhD student in the Department of Mathematics at Brown University. My advisor is [Benoît Pausader](https://www.math.brown.edu/bpausade/).
 
@@ -14,13 +14,13 @@ I completed my undergraduate studies at the University of Science and Technology
 
 I am interested in analysis and partial differential equations. My current research focuses on nonlinear dispersive PDEs and kinetic equations, especially long-time behavior and stability problems.
 
-**Contact:** wenrui_huangAtbrownDotedu
-
 </div>
-<div markdown="1">
+<div class="about-notes" markdown="1">
 
-![Portrait of Wenrui Huang](wenrui2.png){:.headshot-inline}
-
+- Brown University Mathematics
+- Advisor: [Benoît Pausader](https://www.math.brown.edu/bpausade/)
+- Research: analysis, PDE, kinetic equations
+- Contact: wenrui_huangAtbrownDotedu
 </div>
 </div>
 

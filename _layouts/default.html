@@ -16,17 +16,32 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="container">
-    <header>
-      <h1 class="title">Wenrui Huang</h1>
-      <p class="subtitle">PhD Student · Department of Mathematics, Brown University</p>
+  <div class="site-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Analysis · Dispersive PDE · Kinetic Theory</p>
+        <h1 class="title">Wenrui Huang</h1>
+        <p class="subtitle">PhD Student · Department of Mathematics, Brown University</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#publications--preprints">Publications</a>
+          <a class="button secondary" href="{{ '/CV_hwr.pdf' | relative_url }}">CV</a>
+        </div>
+      </div>
+
+      <figure class="hero-portrait">
+        <img src="{{ '/wenrui2.png' | relative_url }}" alt="Portrait of Wenrui Huang" />
+        <figcaption>Brown University Mathematics</figcaption>
+      </figure>
+    </header>
+
+    <div class="nav-wrap">
       <nav aria-label="Primary" class="nav">
         <a href="#about">About</a>
         <a href="#publications--preprints">Publications &amp; Preprints</a>
         <a href="#teaching">Teaching</a>
         <a href="#talks">Talks</a>
       </nav>
-    </header>
+    </div>
 
     <main id="main" class="markdown-body">
       {{ content }}
