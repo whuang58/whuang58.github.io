@@ -98,14 +98,13 @@ a:hover {
 }
 
 .hero {
-  min-height: 560px;
+  min-height: 420px;
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(290px, .72fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   position: relative;
   isolation: isolate;
-  padding: clamp(3rem, 6vw, 5.6rem) clamp(1.2rem, 4vw, 3.4rem);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.2rem, 4vw, 3.4rem);
   margin-bottom: 1rem;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
@@ -135,7 +134,7 @@ a:hover {
 }
 
 .hero-copy {
-  max-width: 720px;
+  max-width: 780px;
 }
 
 h1.title {
@@ -155,35 +154,6 @@ h1.title {
   font-size: 1.22rem;
   line-height: 1.5;
   text-wrap: balance;
-}
-
-.hero-portrait {
-  margin: 0;
-  justify-self: end;
-  width: min(100%, 360px);
-  position: relative;
-}
-
-.hero-portrait::before {
-  content: "";
-  position: absolute;
-  inset: -1.2rem 1.2rem 1.2rem -1.2rem;
-  z-index: -1;
-  background:
-    linear-gradient(135deg, rgba(184, 121, 53, .2), transparent 42%),
-    linear-gradient(315deg, rgba(13, 91, 98, .18), transparent 46%),
-    var(--paper);
-  box-shadow: var(--shadow);
-}
-
-.hero-portrait img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 22px 58px rgba(38, 32, 25, .2);
 }
 
 .nav-wrap {
@@ -278,13 +248,43 @@ p {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 760px);
-  align-items: start;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, .65fr);
+  gap: clamp(1.8rem, 5vw, 4rem);
+  align-items: center;
 }
 
 .about-copy {
   max-width: 760px;
   font-size: 1.03rem;
+}
+
+.about-portrait {
+  justify-self: end;
+  width: min(100%, 320px);
+  margin: 0;
+  position: relative;
+}
+
+.about-portrait::before {
+  content: "";
+  position: absolute;
+  inset: -1rem 1rem 1rem -1rem;
+  z-index: -1;
+  background:
+    linear-gradient(135deg, rgba(184, 121, 53, .2), transparent 42%),
+    linear-gradient(315deg, rgba(13, 91, 98, .16), transparent 48%),
+    var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 20px 52px rgba(38, 32, 25, .18);
 }
 
 ol,
@@ -409,7 +409,6 @@ strong {
 @media (max-width: 860px) {
   .hero {
     min-height: auto;
-    grid-template-columns: 1fr;
     padding-inline: 0;
   }
 
@@ -417,11 +416,14 @@ strong {
     font-size: 4rem;
   }
 
-  .hero-portrait {
-    justify-self: start;
-    width: min(100%, 310px);
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 
+  .about-portrait {
+    justify-self: start;
+    width: min(100%, 300px);
+  }
 }
 
 @media (max-width: 560px) {
@@ -446,7 +448,7 @@ strong {
     font-size: 1.05rem;
   }
 
-  .hero-portrait {
+  .about-portrait {
     width: min(100%, 280px);
   }
 

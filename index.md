@@ -17,6 +17,9 @@ I am interested in analysis and partial differential equations. My current resea
 **Contact:** wenrui_huangAtbrownDotedu
 
 </div>
+<figure class="about-portrait">
+  <img src="wenrui2.png" alt="Portrait of Wenrui Huang">
+</figure>
 </div>
 
 ## Publications & Preprints
