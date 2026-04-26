@@ -119,20 +119,6 @@ a:hover {
   opacity: .68;
 }
 
-.hero::after {
-  content: "PDE";
-  position: absolute;
-  right: clamp(-1rem, 2vw, 2rem);
-  bottom: clamp(1rem, 6vw, 4rem);
-  z-index: -1;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(13, 91, 98, .14);
-  font-family: Cinzel, ui-serif, serif;
-  font-size: 9rem;
-  font-weight: 600;
-  line-height: 1;
-}
-
 .hero-copy {
   max-width: 780px;
 }
