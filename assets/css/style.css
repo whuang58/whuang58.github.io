@@ -143,11 +143,8 @@ h1.title {
 }
 
 .nav-wrap {
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  margin: .3rem 0 2.85rem;
-  padding: .75rem 0 1rem;
+  margin: .15rem 0 2.35rem;
+  padding: .45rem 0 .75rem;
   background: transparent;
 }
 
@@ -155,58 +152,67 @@ h1.title {
   width: fit-content;
   max-width: 100%;
   margin: 0 auto;
-  padding: .55rem 1.25rem;
+  padding: .45rem .35rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: .45rem 2rem;
+  gap: .35rem 1.15rem;
   position: relative;
   isolation: isolate;
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, .58), rgba(255, 255, 255, .28)),
-    var(--nav-bg);
-  box-shadow: 0 18px 44px rgba(38, 32, 25, .08);
-  backdrop-filter: blur(18px);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: transparent;
 }
 
 .nav::before,
 .nav::after {
   content: "";
   position: absolute;
-  left: 1rem;
-  right: 1rem;
+  left: 50%;
+  width: min(8rem, 44%);
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--copper), transparent);
-  opacity: .58;
+  background: linear-gradient(90deg, transparent, var(--copper), var(--wine), transparent);
+  opacity: .5;
+  transform: translateX(-50%);
 }
 
 .nav::before {
-  top: .35rem;
+  top: -1px;
 }
 
 .nav::after {
-  bottom: .35rem;
+  bottom: -1px;
 }
 
 .nav a {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 2.65rem;
-  padding: .3rem .2rem;
+  min-height: 2.35rem;
+  padding: .32rem .58rem;
   color: var(--muted);
   font-size: .96rem;
   font-weight: 600;
   z-index: 1;
 }
 
+.nav a::before {
+  content: "";
+  position: absolute;
+  inset: .34rem .05rem;
+  z-index: -1;
+  background: linear-gradient(135deg, rgba(13, 91, 98, .09), rgba(154, 47, 67, .07));
+  opacity: 0;
+  transform: scale(.96);
+  transition: opacity .18s ease, transform .18s ease;
+}
+
 .nav a::after {
   content: "";
   position: absolute;
-  left: .15rem;
-  right: .15rem;
-  bottom: .48rem;
+  left: .58rem;
+  right: .58rem;
+  bottom: .42rem;
   height: 2px;
   background: linear-gradient(90deg, var(--copper), var(--wine));
   transform: scaleX(0);
@@ -218,6 +224,11 @@ h1.title {
 .nav a:hover {
   color: var(--link-hover);
   text-decoration: none;
+}
+
+.nav a:hover::before {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .nav a:hover::after {
@@ -473,8 +484,8 @@ strong {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    gap: .2rem 1rem;
-    padding: .55rem .8rem;
+    gap: .15rem .4rem;
+    padding: .45rem 0;
   }
 
   .markdown-body > h2 {
