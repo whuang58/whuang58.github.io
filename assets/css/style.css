@@ -295,18 +295,6 @@ p {
   position: relative;
 }
 
-.about-portrait::before {
-  content: "";
-  position: absolute;
-  inset: -1rem 1rem 1rem -1rem;
-  z-index: -1;
-  background:
-    linear-gradient(135deg, rgba(184, 121, 53, .2), transparent 42%),
-    linear-gradient(315deg, rgba(13, 91, 98, .16), transparent 48%),
-    var(--paper);
-  box-shadow: var(--shadow);
-}
-
 .about-portrait img {
   display: block;
   width: 100%;
