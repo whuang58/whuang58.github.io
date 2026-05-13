@@ -350,6 +350,18 @@ li + li {
   box-shadow: 0 12px 30px rgba(38, 32, 25, .08);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .markdown-body ol > li a:first-child {
   color: var(--link);
   font-weight: 600;
@@ -360,38 +372,50 @@ li + li {
 }
 
 .paper-abstract {
-  margin-top: .8rem;
+  margin-top: .9rem;
 }
 
 .paper-abstract summary {
-  width: fit-content;
-  min-height: 2rem;
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  padding: .28rem .7rem .3rem .6rem;
+  position: absolute;
+  left: 2.25rem;
+  top: 3.25rem;
+  width: 1.08rem;
+  height: 1.08rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
   cursor: pointer;
   color: var(--wine);
-  background: linear-gradient(135deg, rgba(13, 91, 98, .08), rgba(154, 47, 67, .07));
-  border-left: 2px solid var(--copper);
-  font-size: .9rem;
-  font-weight: 600;
+  background: rgba(255, 255, 255, .58);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 20px rgba(38, 32, 25, .07);
+  transition: background .18s ease, color .18s ease, transform .18s ease;
 }
 
 .paper-abstract summary::-webkit-details-marker {
   display: none;
 }
 
-.paper-abstract summary::after {
-  content: "+";
+.paper-abstract summary::before {
+  content: "";
+  width: .34rem;
+  height: .34rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
   color: var(--copper);
-  font-family: Cinzel, ui-serif, serif;
-  font-size: 1rem;
-  line-height: 1;
+  transform: rotate(-45deg) translate(-1px, 0);
+  transition: transform .18s ease, color .18s ease;
 }
 
-.paper-abstract[open] summary::after {
-  content: "-";
+.paper-abstract summary:hover {
+  color: var(--link-hover);
+  background: linear-gradient(135deg, rgba(13, 91, 98, .08), rgba(154, 47, 67, .08));
+  transform: translateX(1px);
+}
+
+.paper-abstract[open] summary::before {
+  color: var(--wine);
+  transform: rotate(45deg) translate(-1px, -1px);
 }
 
 .paper-abstract p {
