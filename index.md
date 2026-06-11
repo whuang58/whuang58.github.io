@@ -63,7 +63,7 @@ I am interested in analysis and partial differential equations. My current resea
 ### Brown University
 
 - Fall 2025 — TA — MATH 0190 Calculus II (Physics/Engineering)
-- Fall 2023, Spring 2024 — TA — MATH 0180 Calculus III
+- Fall 2023, Spring 2024, Fall 2026 — TA — MATH 0180 Calculus III
 - Spring 2023 — TA — MATH 0100 Calculus II
 
 ### University of Science and Technology of China
