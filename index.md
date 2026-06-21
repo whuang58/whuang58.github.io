@@ -39,7 +39,7 @@ I am interested in analysis and partial differential equations. My current resea
    </details>
 
 3. [The Vlasov–Poisson system with a perfectly conducting wall: Convex domains](https://arxiv.org/abs/2412.13434)  
-   (with B. Pausader and M. Suzuki), to appear in Comm. Math. Phys. arXiv:2412.13434
+   (with B. Pausader and M. Suzuki), to appear in **Comm. Math. Phys.**
    <details class="paper-abstract">
      <summary><span class="visually-hidden">Toggle abstract</span></summary>
      <p>We investigate the Vlasov-Poisson system in convex domains with a perfectly conducting boundary. Under localization and geometric assumptions, the asymptotic particle velocities are constrained by the asymptotic domain, and the dynamics exhibit a modified scattering behavior.</p>
@@ -52,7 +52,7 @@ I am interested in analysis and partial differential equations. My current resea
    </details>
 
 5. [Scattering of the Vlasov–Riesz system in three dimensions](https://arxiv.org/abs/2407.16919)  
-   (with H. Kwon), to appear in **Annales Henri Poincaré**. arXiv:2407.16919
+   (with H. Kwon), to appear in **Annales Henri Poincaré**.
    <details class="paper-abstract">
      <summary><span class="visually-hidden">Toggle abstract</span></summary>
      <p>We study long-time behavior for the three-dimensional Vlasov-Riesz system. The paper establishes scattering for small data in sub-Coulomb regimes, modified scattering near the Coulomb case, and corresponding wave operators, including polynomial corrections in the asymptotic description.</p>
