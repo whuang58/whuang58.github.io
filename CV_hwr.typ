@@ -88,7 +88,7 @@
     #text(fill: title-blue, style: "italic")[
       The Vlasov-Poisson system with a perfectly conducting wall: Convex domains
     ]
-  ], with B. Pausader and M. Suzuki. arXiv:2412.13434.
+  ], with B. Pausader and M. Suzuki. To appear in Comm. Math. Phys. arXiv:2412.13434.
 
 + #link("https://arxiv.org/abs/2411.02737")[
     #text(fill: title-blue, style: "italic")[
@@ -163,5 +163,4 @@
     
 //  ],
 //)
-
 
