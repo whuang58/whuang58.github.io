@@ -77,5 +77,5 @@ I am interested in analysis and partial differential equations. My current resea
 - GLESPA seminar, Brown University, April 2026.
 - Poster session in Workshop on Kinetic Theory and Fluids, University of Wisconsin-Madison, March 2025.
 - GLESPA seminar, Brown University, April 2024.
-- Brown-Yale PDE seminar, Brown University, April 2024.
-- Brown-Yale PDE seminar, Brown University, November 2023.
+- Brown-Yale PDE seminar,  April 2024.
+- Brown-Yale PDE seminar, November 2023.

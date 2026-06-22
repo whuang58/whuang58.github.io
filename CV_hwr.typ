@@ -119,7 +119,7 @@
       time: [Mar. 2025],
     )
     #award(
-      title: [Brown--Yale PDE Seminar, Brown University],
+      title: [Brown--Yale PDE Seminar],
       time: [Apr. 2024],
     )
     #award(
@@ -127,7 +127,7 @@
       time: [Apr. 2024],
     )
     #award(
-      title: [Brown--Yale PDE Seminar, Brown University],
+      title: [Brown--Yale PDE Seminar],
       time: [Nov. 2023],
     )
   ],
