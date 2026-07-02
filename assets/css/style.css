@@ -292,12 +292,11 @@ li + li {
 .markdown-body ol > li {
   counter-increment: publication;
   position: relative;
-  padding: .55rem 0 .6rem 2.15rem;
-  border-top: 1px solid var(--line);
+  padding: .36rem 0 .4rem 2.15rem;
 }
 
-.markdown-body ol > li:last-child {
-  border-bottom: 1px solid var(--line);
+.markdown-body ol > li + li {
+  margin-top: .45rem;
 }
 
 .markdown-body ol > li::before {
