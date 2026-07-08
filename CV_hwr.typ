@@ -100,7 +100,7 @@
     #text(fill: title-blue, style: "italic")[
       Scattering of the Vlasov-Riesz system in three dimensions
     ]
-  ], with H. Kwon.  arXiv:2407.16919.
+  ], with H. Kwon.  arXiv:2407.16919. To appear in *Annales Henri Poincaré*.
   ],
 )
 
