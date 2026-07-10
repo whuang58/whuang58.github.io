@@ -6,6 +6,8 @@
   --muted: #626c75;
   --link: #12676b;
   --link-hover: #8f3347;
+  --nav-link: #245f8f;
+  --nav-link-hover: #123f68;
   --teal: #12676b;
   --wine: #8f3347;
   --copper: #a77a45;
@@ -26,6 +28,8 @@
     --muted: #b7beb9;
     --link: #86d5cc;
     --link-hover: #f0a3b1;
+    --nav-link: #8fc0e8;
+    --nav-link-hover: #c2ddf4;
     --teal: #86d5cc;
     --wine: #df7f91;
     --copper: #d7aa72;
@@ -138,11 +142,11 @@ h1.title {
   width: fit-content;
   max-width: 100%;
   margin: 0;
-  padding: .16rem .2rem;
+  padding: .22rem .28rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: .1rem .38rem;
+  gap: .12rem .55rem;
   position: relative;
   isolation: isolate;
   border-top: 1px solid var(--line);
@@ -167,10 +171,10 @@ h1.title {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 1.8rem;
-  padding: .18rem .32rem;
-  color: var(--muted);
-  font-size: .86rem;
+  min-height: 2.05rem;
+  padding: .22rem .4rem;
+  color: var(--nav-link);
+  font-size: 1rem;
   font-weight: 600;
   z-index: 1;
 }
@@ -194,7 +198,7 @@ h1.title {
 }
 
 .nav a:hover {
-  color: var(--link-hover);
+  color: var(--nav-link-hover);
   text-decoration: none;
 }
 
