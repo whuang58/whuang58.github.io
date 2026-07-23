@@ -48,7 +48,7 @@ I am interested in analysis and partial differential equations. My current resea
      <p>This work treats a final-state problem for the Hartree equation with repulsive Coulomb interaction. For small and sufficiently localized asymptotic data, it constructs a unique global solution with the prescribed modified scattering profile.</p>
    </details>
 
-5. [Scattering of the Vlasov–Riesz system in three dimensions](https://link.springer.com/article/10.1007/s00023-026-01735-7), (with H. Kwon), **Annales Henri Poincaré**, [arXiv:2407.16919](https://arxiv.org/abs/2407.16919).
+5. [Scattering of the Vlasov–Riesz system in three dimensions](https://link.springer.com/article/10.1007/s00023-026-01735-7), (with H. Kwon), **Annales Henri Poincaré** (2026), [arXiv:2407.16919](https://arxiv.org/abs/2407.16919).
    <details class="paper-abstract">
      <summary><span class="visually-hidden">Toggle abstract</span></summary>
      <p>We study long-time behavior for the three-dimensional Vlasov-Riesz system. The paper establishes scattering for small data in sub-Coulomb regimes, modified scattering near the Coulomb case, and corresponding wave operators, including polynomial corrections in the asymptotic description.</p>

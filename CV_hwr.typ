@@ -96,11 +96,11 @@
     ]
   ], arXiv:2411.02737.
 
-+ #link("https://arxiv.org/abs/2407.16919")[
++ #link("https://link.springer.com/article/10.1007/s00023-026-01735-7")[
     #text(fill: title-blue, style: "italic")[
       Scattering of the Vlasov-Riesz system in three dimensions
     ]
-  ], with H. Kwon.  arXiv:2407.16919. To appear in *Annales Henri Poincaré*.
+  ], with H. Kwon. *Annales Henri Poincaré* (2026). #link("https://arxiv.org/abs/2407.16919")[arXiv:2407.16919].
   ],
 )
 
