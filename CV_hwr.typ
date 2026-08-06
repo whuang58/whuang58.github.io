@@ -1,6 +1,6 @@
 #import "@preview/yuan-resume:0.1.0": *
 
-#set page(margin: (top: 1.2cm, bottom: 2.4cm, left: 1.8cm, right: 2.3cm))
+#set page(margin: (top: 1.2cm, bottom: 1.4cm, left: 1.8cm, right: 2.3cm))
 #set text(font: "New Computer Modern", 10pt)
 
 #let title-blue = rgb("#1E5AA8")
@@ -72,7 +72,13 @@
     #set par(justify: true)
     #set enum(spacing: 10pt)
    
-   + #link("https://arxiv.org/abs/2602.21344")[
+   + #link("https://arxiv.org/abs/2608.04402")[
+    #text(fill: title-blue, style: "italic")[
+      Long-Time Dynamics and Modified Scattering for the Coulomb Vlasov-Hartree System
+    ]
+  ], with M. Xie. arXiv:2608.04402.
+
++ #link("https://arxiv.org/abs/2602.21344")[
     #text(fill: title-blue, style: "italic")[
       Scattering map for the Vlasov-Poisson system with a repulsive harmonic potential
     ]
