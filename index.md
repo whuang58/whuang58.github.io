@@ -24,10 +24,10 @@ I am interested in analysis and partial differential equations. My current resea
 
 ## Publications & Preprints
 
-1. [Long-Time Dynamics and Modified Scattering for the Coulomb Vlasov–Hartree System](https://arxiv.org/abs/2608.04402), (with M. Xie), arXiv:2608.04402
+1. [Long-Time Dynamics of  Vlasov–Hartree System across Coulomb threshold](https://arxiv.org/abs/2608.04402), (with M. Xie), arXiv:2608.04402
    <details class="paper-abstract">
      <summary><span class="visually-hidden">Toggle abstract</span></summary>
-     <p>We study the three-dimensional Coulomb Vlasov-Hartree system, a classical-quantum model for Bose-Fermi mixtures. For small, regular, and localized data, the paper proves global well-posedness and identifies the coupled long-time dynamics: logarithmic corrections appear in both the Vlasov characteristics and the Hartree phase.</p>
+     <p>We study the three-dimensional Vlasov--Hartree system with Coulomb and inverse-power interactions. For small, regular, localized data, we prove global well-posedness and determine long-time dynamics. The main result concerns the Coulomb case, where the coupling persists at leading order through reciprocal asymptotic corrections: the fermionic distribution scatters along logarithmically corrected free characteristics set by the asymptotic bosonic profile, while the bosonic wave gains a logarithmic phase set by the asymptotic fermionic density. We also treat longer- and shorter-range interactions. Our proof combines Hamiltonian methods for the Vlasov equation with purely physical-space vector-field methods for dispersive equations. For stronger long-range interactions, we introduce a symplectic transformation and a regularized effective-phase cancellation, which remove leading nonintegrable interactions while preserving Hamiltonian structure and avoiding derivative loss.  </p>
    </details>
 
 2. [Scattering map for the Vlasov-Poisson system with a harmonic repulsive potential](https://arxiv.org/abs/2602.21344), (with H. Kwon), arXiv:2602.21344

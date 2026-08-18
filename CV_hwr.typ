@@ -74,7 +74,7 @@
    
    + #link("https://arxiv.org/abs/2608.04402")[
     #text(fill: title-blue, style: "italic")[
-      Long-Time Dynamics and Modified Scattering for the Coulomb Vlasov-Hartree System
+      Long-Time Dynamics of  Vlasov-Hartree Systems across the Coulomb threshold
     ]
   ], with M. Xie. arXiv:2608.04402.
 
