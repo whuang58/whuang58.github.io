@@ -18,13 +18,13 @@ I am interested in analysis and partial differential equations. My current resea
 
 </div>
 <figure class="about-portrait">
-  <img src="wenrui2.png" alt="Portrait of Wenrui Huang">
+  <img src="wenrui2.jpg" alt="Portrait of Wenrui Huang">
 </figure>
 </div>
 
 ## Publications & Preprints
 
-1. [Long-Time Dynamics of  Vlasov–Hartree System across Coulomb threshold](https://arxiv.org/abs/2608.04402), (with M. Xie), arXiv:2608.04402
+1. [Long-Time Dynamics of  Vlasov–Hartree System across the Coulomb threshold](https://arxiv.org/abs/2608.04402), (with M. Xie), arXiv:2608.04402
    <details class="paper-abstract">
      <summary><span class="visually-hidden">Toggle abstract</span></summary>
      <p>We study the three-dimensional Vlasov--Hartree system with Coulomb and inverse-power interactions. For small, regular, localized data, we prove global well-posedness and determine long-time dynamics. The main result concerns the Coulomb case, where the coupling persists at leading order through reciprocal asymptotic corrections: the fermionic distribution scatters along logarithmically corrected free characteristics set by the asymptotic bosonic profile, while the bosonic wave gains a logarithmic phase set by the asymptotic fermionic density. We also treat longer- and shorter-range interactions. Our proof combines Hamiltonian methods for the Vlasov equation with purely physical-space vector-field methods for dispersive equations. For stronger long-range interactions, we introduce a symplectic transformation and a regularized effective-phase cancellation, which remove leading nonintegrable interactions while preserving Hamiltonian structure and avoiding derivative loss.  </p>
