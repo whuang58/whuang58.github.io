@@ -90,11 +90,11 @@
     ]
   ], with D. Bian, E. Grenier, and B. Pausader. arXiv:2601.10030.
 
-+ #link("https://arxiv.org/abs/2412.13434")[
++ #link("https://link.springer.com/article/10.1007/s00220-026-05731-0")[
     #text(fill: title-blue, style: "italic")[
-      The Vlasov-Poisson system with a perfectly conducting wall: Convex domains
+      The Vlasov-Poisson System with a Perfectly Conducting Wall: Convex Domains
     ]
-  ], with B. Pausader and M. Suzuki. To appear in *Comm. Math. Phys.*
+  ], with B. Pausader and M. Suzuki. *Commun. Math. Phys.* 407, 219 (2026). #link("https://arxiv.org/abs/2412.13434")[arXiv:2412.13434].
 
 + #link("https://arxiv.org/abs/2411.02737")[
     #text(fill: title-blue, style: "italic")[

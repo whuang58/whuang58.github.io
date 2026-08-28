@@ -44,7 +44,7 @@ I am currently seeking a postdoctoral position beginning in Fall 2027.
      <p>This paper analyzes the linear behavior of small Bernstein-Green-Kruskal waves. The stability or instability mechanism is tied to the sign of the derivative of the energy distribution at zero energy.</p>
    </details>
 
-4. [The Vlasov–Poisson system with a perfectly conducting wall: Convex domains](https://arxiv.org/abs/2412.13434), (with B. Pausader and M. Suzuki), to appear in **Comm. Math. Phys.**
+4. [The Vlasov–Poisson System with a Perfectly Conducting Wall: Convex Domains](https://link.springer.com/article/10.1007/s00220-026-05731-0), (with B. Pausader and M. Suzuki), **Commun. Math. Phys.** 407, 219 (2026), [arXiv:2412.13434](https://arxiv.org/abs/2412.13434).
    <details class="paper-abstract">
      <summary><span class="visually-hidden">Toggle abstract</span></summary>
      <p>We investigate the Vlasov-Poisson system in convex domains with a perfectly conducting boundary. Under localization and geometric assumptions, the asymptotic particle velocities are constrained by the asymptotic domain, and the dynamics exhibit a modified scattering behavior.</p>
