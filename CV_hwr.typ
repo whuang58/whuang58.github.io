@@ -1,6 +1,6 @@
 #import "@preview/yuan-resume:0.1.0": *
 
-#set page(margin: (top: 1.2cm, bottom: 1.4cm, left: 1.8cm, right: 2.3cm))
+#set page(margin: (top: 1.2cm, bottom: 0.8cm, left: 1.8cm, right: 2.3cm))
 #set text(font: "New Computer Modern", 10pt)
 
 #let title-blue = rgb("#1E5AA8")
@@ -94,7 +94,7 @@
     #text(fill: title-blue, style: "italic")[
       The Vlasov-Poisson System with a Perfectly Conducting Wall: Convex Domains
     ]
-  ], with B. Pausader and M. Suzuki. *Commun. Math. Phys.* 407, 219 (2026). #link("https://arxiv.org/abs/2412.13434")[arXiv:2412.13434].
+  ], with B. Pausader and M. Suzuki. *Commun. Math. Phys.* 407, 219 (2026).
 
 + #link("https://arxiv.org/abs/2411.02737")[
     #text(fill: title-blue, style: "italic")[
@@ -111,11 +111,15 @@
 )
 
 #section-block(
-  [Talks],
+  [#text(size: 11pt)[Talks and\ Presentations]],
   [
   
     #set par(spacing: 9pt)
 
+    #award(
+      title: [Analysis Seminar, Yale University],
+      time: [Sep. 2026],
+    )
     #award(
       title: [GLESPA Seminar, Brown University],
       time: [Apr. 2026],
