@@ -15,6 +15,9 @@ I completed my undergraduate studies at the University of Science and Technology
 
 I am interested in analysis and partial differential equations. My current research focuses on nonlinear dispersive PDEs and kinetic equations, especially long-time behavior and stability problems.
 
+I am currently seeking a postdoctoral position beginning in Fall 2027.
+{: .seeking}
+
 </div>
 </section>
 
@@ -98,7 +101,7 @@ I am interested in analysis and partial differential equations. My current resea
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://link.springer.com/article/10.1007/s00023-026-01735-7">Scattering of the Vlasov–Riesz system in three dimensions</a></h4>
-  <p class="paper-meta"><span>with H. Kwon</span> <span><cite>Annales Henri Poincaré</cite> (2026), <a href="https://arxiv.org/abs/2407.16919">arXiv:2407.16919</a></span></p>
+  <p class="paper-meta"><span>with H. Kwon</span> <span><cite>Annales Henri Poincaré</cite> (2026)</span></p>
   <details class="paper-abstract">
     <summary>Abstract</summary>
     <p>We study long-time behavior for the three-dimensional Vlasov-Riesz system. The paper establishes scattering for small data in sub-Coulomb regimes, modified scattering near the Coulomb case, and corresponding wave operators, including polynomial corrections in the asymptotic description.</p>

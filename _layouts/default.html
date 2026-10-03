@@ -15,8 +15,8 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="page">
-    <header class="masthead">
+  <header class="masthead">
+    <div class="masthead-inner">
       <div class="masthead-text">
         <h1 class="name">Wenrui Huang</h1>
         <p class="role">PhD student, Department of Mathematics, Brown University</p>
@@ -24,15 +24,13 @@
           <a href="{{ '/CV_hwr.pdf' | relative_url }}">CV</a>
           <span class="email">wenrui_huang [at] brown.edu</span>
         </p>
-        <p class="market">Seeking a postdoctoral position beginning in Fall 2027.</p>
       </div>
       <img class="portrait" src="{{ '/wenrui-portrait.jpg' | relative_url }}" width="480" height="600" alt="Portrait of Wenrui Huang">
-    </header>
+    </div>
+  </header>
 
-    <main id="main">
-      {{ content }}
-    </main>
-
-  </div>
+  <main id="main" class="page">
+    {{ content }}
+  </main>
 </body>
 </html>
