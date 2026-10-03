@@ -23,7 +23,7 @@ I am currently seeking a postdoctoral position beginning in Fall 2027.
 
 <section class="section" markdown="1">
 
-## Papers
+## Papers & Preprints
 
 <div class="section-body" markdown="1">
 
