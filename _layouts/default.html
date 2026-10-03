@@ -9,32 +9,30 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=EB+Garamond:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="site-shell">
-    <header class="hero">
-      <div class="hero-copy">
-        <div class="hero-heading">
-          <h1 class="title">Wenrui Huang</h1>
-          <nav aria-label="Primary" class="nav">
-            <a href="#about">About</a>
-            <a href="#publications--preprints">Publications &amp; Preprints</a>
-            <a href="#teaching">Teaching</a>
-            <a href="#talks-and-presentations">Talks and Presentations</a>
-          </nav>
-        </div>
-        <p class="subtitle">PhD Student · Department of Mathematics, Brown University</p>
+  <div class="page">
+    <header class="masthead">
+      <div class="masthead-text">
+        <h1 class="name">Wenrui Huang</h1>
+        <p class="role">PhD student, Department of Mathematics, Brown University</p>
+        <p class="contact">
+          <a href="{{ '/CV_hwr.pdf' | relative_url }}">CV</a>
+          <span class="email">wenrui_huang [at] brown.edu</span>
+        </p>
+        <p class="market">Seeking a postdoctoral position beginning in Fall 2027.</p>
       </div>
+      <img class="portrait" src="{{ '/wenrui-portrait.jpg' | relative_url }}" width="480" height="600" alt="Portrait of Wenrui Huang">
     </header>
 
-    <main id="main" class="markdown-body">
+    <main id="main">
       {{ content }}
     </main>
+
   </div>
 </body>
 </html>
