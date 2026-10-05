@@ -1,5 +1,14 @@
 #import "@preview/yuan-resume:0.1.0": *
 
+// Same as the template's section-block, with a smaller gap between sections
+#let section-block(title, content) = [
+  #grid(
+    columns: (2.8fr, 13.8fr),
+    smallcaps(text(font: "Cronos Pro", size: 14.5pt, title)), content,
+  )
+  #v(12pt)
+]
+
 #set page(margin: (top: 1.2cm, bottom: 0.8cm, left: 1.8cm, right: 2.3cm))
 #set text(font: "New Computer Modern", 10pt)
 
@@ -70,9 +79,21 @@
   [
     
     #set par(justify: true)
-    #set enum(spacing: 10pt)
+    #set enum(spacing: 8pt)
    
-   + #link("https://arxiv.org/abs/2608.04402")[
+   + #link("https://arxiv.org/abs/2610.02643")[
+    #text(fill: title-blue, style: "italic")[
+      A common structure for modified scattering: Vlasov-Riesz, Hartree, and their coupling
+    ]
+  ], with M. Xie. arXiv:2610.02643.
+
++ #link("https://arxiv.org/abs/2610.02551")[
+    #text(fill: title-blue, style: "italic")[
+      Asymptotic behavior of the one-dimensional Vlasov-Poisson system with a repulsive harmonic potential
+    ]
+  ], arXiv:2610.02551.
+
++ #link("https://arxiv.org/abs/2608.04402")[
     #text(fill: title-blue, style: "italic")[
       Long-Time Dynamics of  Vlasov-Hartree Systems across the Coulomb threshold
     ]

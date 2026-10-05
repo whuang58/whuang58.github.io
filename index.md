@@ -35,8 +35,8 @@ I am currently seeking a postdoctoral position beginning in Fall 2027.
 ### Preprints
 
 <article class="paper">
-  <h4 class="paper-title">Asymptotic behavior of the one-dimensional Vlasov–Poisson system with a repulsive harmonic potential</h4>
-  <p class="paper-meta"><span>Preprint, 2026. arXiv version coming soon.</span></p>
+  <h4 class="paper-title"><a href="https://arxiv.org/abs/2610.02551">Asymptotic behavior of the one-dimensional Vlasov–Poisson system with a repulsive harmonic potential</a></h4>
+  <p class="paper-meta"><span><a href="https://arxiv.org/abs/2610.02551">arXiv:2610.02551</a></span></p>
   <details class="paper-abstract">
     <summary>Abstract</summary>
     <p>We consider the one-dimensional Vlasov–Poisson system with a repulsive harmonic potential. For repulsive self-interactions, we establish modified scattering for initial data of arbitrary size in some weighted Sobolev spaces without symmetry, compact support, or spatial moment assumptions. The proof uses a Hamilton–Jacobi momentum correction and the sign of the repulsive interaction to obtain large-data bounds. We also construct modified wave operators. These results complement the higher-dimensional theory. We expect our methods to be useful in the study of a broader class of kinetic equations with very long-range interactions.</p>
@@ -44,8 +44,8 @@ I am currently seeking a postdoctoral position beginning in Fall 2027.
 </article>
 
 <article class="paper">
-  <h4 class="paper-title">A common structure for modified scattering: Vlasov–Riesz, Hartree, and their coupling</h4>
-  <p class="paper-meta"><span>with M. Xie</span> <span>Preprint, 2026. arXiv version coming soon.</span></p>
+  <h4 class="paper-title"><a href="https://arxiv.org/abs/2610.02643">A common structure for modified scattering: Vlasov–Riesz, Hartree, and their coupling</a></h4>
+  <p class="paper-meta"><span>with M. Xie</span> <span><a href="https://arxiv.org/abs/2610.02643">arXiv:2610.02643</a></span></p>
   <details class="paper-abstract">
     <summary>Abstract</summary>
     <p>We identify a common action–density structure for the Hartree and Vlasov–Riesz equations and their coupling. Along free rays, the feedback between nonlinear actions and rescaled densities governs wave phase modulations and kinetic momentum translations. This structure persists under the exchange of sources, providing convergent modified profiles and an explicit recursive construction of the asymptotic corrections. We thereby establish small-data global existence and modified scattering in three spatial dimensions for the Hartree equation, the Vlasov–Riesz equation, and the coupled Vlasov–Hartree system, with interaction potential <span class="nowrap"><i>λ</i>|<i>x</i>|<sup>−<i>α</i></sup></span>, <span class="nowrap"><i>λ</i> ∈ ℝ</span> and <span class="nowrap">0 &lt; <i>α</i> ≤ 1/2</span>. In this strongly long-range regime, the asymptotic action contains finitely many successive corrections beyond its leading term. To our knowledge, these are the first forward modified-scattering results for all three models throughout this range.</p>
