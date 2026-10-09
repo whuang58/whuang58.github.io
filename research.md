@@ -21,7 +21,7 @@ I have worked on, or am interested in, the following topics.
 
 2. **Long-time behavior in the presence of an external potential,** for the Vlasov–Poisson system and for dispersive equations such as NLS and Hartree, for example with a repulsive harmonic potential or Coulomb potential.
 
-3. **Linear and nonlinear stability of steady states of the Vlasov–Poisson system,** including homogeneous equilibria (Landau damping) and BGK waves.
+3. **Linear and nonlinear stability of steady states of the Vlasov–Poisson system,** including homogeneous equilibria (Landau damping) and inhomogeneous equilibria (BGK waves).
 
 4. **Asymptotic stability in the presence of a boundary,** for example the Vlasov–Poisson system in domains with a perfectly conducting wall.
 
