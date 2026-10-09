@@ -160,7 +160,8 @@ p { margin: 0 0 .85rem; }
 
 .nav a:hover { color: var(--link-strong); }
 
-.section { scroll-margin-top: 1.5rem; }
+/* the page you are on is shown in black instead of blue */
+.nav a[aria-current="page"] { color: var(--ink); }
 
 .portrait {
   display: block;
