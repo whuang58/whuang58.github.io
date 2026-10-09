@@ -263,7 +263,11 @@ sup, sub { line-height: 0; }
   font-size: .95rem;
 }
 
-.paper-meta cite { font-style: italic; }
+.paper-meta cite {
+  color: var(--ink);
+  font-style: italic;
+  font-weight: 600;
+}
 
 .nowrap { white-space: nowrap; }
 
