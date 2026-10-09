@@ -11,11 +11,14 @@ permalink: /research/
 <div class="section-body" markdown="1">
 
 <!--
-  Write your research interests here. Plain paragraphs work;
-  use "### Subheading" lines if you want to split them by topic.
+  Edit freely. Each numbered item is one topic.
 -->
 
-I am interested in analysis and partial differential equations. My current research focuses on nonlinear dispersive PDEs and kinetic equations, especially long-time behavior and stability problems.
+I have worked on, or am interested in, the following topics.
+
+1. **Long-time behavior of kinetic and dispersive equations,** especially (modified) scattering theory: whether solutions eventually behave like solutions of the free equation, and how this asymptotic picture has to be corrected when the interaction is long-range, as for the Coulomb potential.
+
+2. **Linear and nonlinear stability of steady states of the Vlasov–Poisson system,** including homogeneous equilibria (Landau damping) and BGK waves.
 
 </div>
 </section>
