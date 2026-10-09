@@ -80,6 +80,9 @@ summary:focus-visible {
 
 p { margin: 0 0 .85rem; }
 
+/* keep superscripts (e.g. |x|^-α) from stretching the line spacing */
+sup, sub { line-height: 0; }
+
 ::selection { background: color-mix(in srgb, var(--link) 22%, transparent); }
 
 .skip { position: absolute; left: -9999px; }
