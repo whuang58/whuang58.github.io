@@ -37,9 +37,8 @@ I have worked on, or am interested in, the following topics.
 <!--
   To add a paper, copy one <article> block and edit it.
   Leave out the "with ..." line for single-author papers.
+  The numbers 1, 2, 3, ... are added automatically, top to bottom.
 -->
-
-### Preprints
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://arxiv.org/abs/2610.02551">Asymptotic behavior of the one-dimensional Vlasov–Poisson system with a repulsive harmonic potential</a></h4>
@@ -94,8 +93,6 @@ I have worked on, or am interested in, the following topics.
     <p>This work treats a final-state problem for the Hartree equation with repulsive Coulomb interaction. For small and sufficiently localized asymptotic data, it constructs a unique global solution with the prescribed modified scattering profile.</p>
   </details>
 </article>
-
-### Published
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://link.springer.com/article/10.1007/s00220-026-05731-0">The Vlasov–Poisson System with a Perfectly Conducting Wall: Convex Domains</a></h4>

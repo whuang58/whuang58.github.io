@@ -209,7 +209,7 @@ sup, sub { line-height: 0; }
 .section-body h3 {
   margin: 1.7rem 0 .2rem;
   color: var(--muted);
-  font-size: .97rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: .01em;
 }
@@ -218,11 +218,27 @@ sup, sub { line-height: 0; }
 
 /* Papers */
 
+.section-body { counter-reset: paper; }
+
 .paper {
+  position: relative;
   max-width: var(--measure);
   margin: 0;
-  padding: .85rem 0 .95rem;
+  padding: .85rem 0 .95rem 2.3rem;
   border-bottom: 1px solid var(--sky-deep);
+  counter-increment: paper;
+}
+
+/* paper number, set to line up with the first line of the title */
+.paper::before {
+  content: counter(paper) ".";
+  position: absolute;
+  left: 0;
+  top: .85rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.38;
+  font-variant-numeric: lining-nums;
 }
 
 .paper:last-child { border-bottom: 0; }
@@ -292,19 +308,20 @@ sup, sub { line-height: 0; }
 
 .rows {
   display: grid;
-  grid-template-columns: 6.5rem minmax(0, 1fr);
-  gap: .45rem 1.25rem;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: .5rem 1.25rem;
   align-items: baseline;
   margin: 0 0 .9rem;
-  font-size: .97rem;
 }
 
 .rows dt {
   color: var(--muted);
-  font-size: .93rem;
+  font-variant-numeric: lining-nums;
 }
 
 .rows dd { margin: 0; }
+
+.section-body h3 + .rows { margin-top: .6rem; }
 
 /* Narrow screens */
 
@@ -332,7 +349,7 @@ sup, sub { line-height: 0; }
 
   .section > h2 { font-size: 1.35rem; }
 
-  .rows { grid-template-columns: 5.6rem minmax(0, 1fr); gap: .35rem 1rem; }
+  .rows { grid-template-columns: 6.2rem minmax(0, 1fr); gap: .4rem .9rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
