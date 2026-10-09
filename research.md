@@ -20,6 +20,8 @@ I have worked on, or am interested in, the following topics.
 
 2. **Linear and nonlinear stability of steady states of the Vlasov–Poisson system,** including homogeneous equilibria (Landau damping) and BGK waves.
 
+3. **Asymptotic stability in the presence of a boundary,** for example the Vlasov–Poisson system in domains with a perfectly conducting wall.
+
 </div>
 </section>
 
