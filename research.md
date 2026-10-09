@@ -19,7 +19,7 @@ I have worked on, or am interested in, the following topics.
 
 1. **Long-time behavior of kinetic and dispersive equations,** such as the Vlasov–Poisson, Vlasov–Riesz and Hartree equations and their coupling, especially (modified) scattering theory for Coulomb and long-range Riesz interactions: whether solutions eventually behave like solutions of the free equation, and how this asymptotic picture has to be corrected when they do not.
 
-2. **Long-time behavior in the presence of an external potential,** for the Vlasov–Poisson system and for dispersive equations such as NLS and Hartree, for example with a repulsive harmonic potential or Coulomb potential.
+2. **Long-time behavior in the presence of an external potential,** for the Vlasov–Poisson system and for dispersive equations such as NLS and Hartree, for example with a repulsive harmonic potential or a Coulomb potential.
 
 3. **Linear and nonlinear stability of steady states of the Vlasov–Poisson system,** including homogeneous equilibria (Landau damping) and inhomogeneous equilibria (BGK waves).
 
@@ -51,12 +51,12 @@ I have worked on, or am interested in, the following topics.
 </article>
 
 <article class="paper">
-  <h4 class="paper-title"><a href="https://arxiv.org/abs/2608.04402">Long-Time Dynamics of Vlasov–Hartree System across the Coulomb threshold</a></h4>
+  <h4 class="paper-title"><a href="https://arxiv.org/abs/2608.04402">Long-time dynamics of Vlasov–Hartree systems across the Coulomb threshold</a></h4>
   <p class="paper-meta"><span>with M. Xie</span> <span><a href="https://arxiv.org/abs/2608.04402">arXiv:2608.04402</a></span></p>
 </article>
 
 <article class="paper">
-  <h4 class="paper-title"><a href="https://arxiv.org/abs/2602.21344">Scattering map for the Vlasov-Poisson system with a harmonic repulsive potential</a></h4>
+  <h4 class="paper-title"><a href="https://arxiv.org/abs/2602.21344">Scattering map for the Vlasov–Poisson system with a repulsive harmonic potential</a></h4>
   <p class="paper-meta"><span>with H. Kwon</span> <span><a href="https://arxiv.org/abs/2602.21344">arXiv:2602.21344</a></span></p>
 </article>
 

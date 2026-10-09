@@ -14,19 +14,19 @@ Sep 2026
 : Analysis Seminar, Yale University
 
 Apr 2026
-: GLESPA seminar, Brown University
+: GLESPA Seminar, Brown University
 
 Mar 2025
-: Poster session, Workshop on Kinetic Theory and Fluids, University of Wisconsin-Madison
+: Poster Session, Workshop on Kinetic Theory and Fluids, University of Wisconsin–Madison
 
 Apr 2024
-: GLESPA seminar, Brown University
+: GLESPA Seminar, Brown University
 
 Apr 2024
-: Brown-Yale PDE seminar
+: Brown–Yale PDE Seminar
 
 Nov 2023
-: Brown-Yale PDE seminar
+: Brown–Yale PDE Seminar
 {: .rows}
 
 </div>
