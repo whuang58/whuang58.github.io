@@ -13,11 +13,11 @@ permalink: /research/
 <!--
   Edit freely. Each numbered item is one topic.
 -->
-I am mainly interested in the long time behavior and stability problems in kinetic (Vlaosv-Poisson, Vlasov-Riesz and Vlasov-Maxwell) and dispersive PDEs (NLS, Hartree).
+I am mainly interested in the long-time behavior and stability problems in kinetic (Vlasov–Poisson, Vlasov–Riesz and Vlasov–Maxwell) and dispersive PDEs (NLS, Hartree).
 
 I have worked on, or am interested in, the following topics.
 
-1. **Long-time behavior of kinetic and dispersive equations,** such as the Vlasov–Poisson, Vlasov–Riesz and Hartree equations and their coupling, especially (modified) scattering theory for  Coulomb and long-range Riesz interactions: whether solutions eventually behave like solutions of the free equation, and how this asymptotic picture has to be corrected when they do not.
+1. **Long-time behavior of kinetic and dispersive equations,** such as the Vlasov–Poisson, Vlasov–Riesz and Hartree equations and their coupling, especially (modified) scattering theory for Coulomb and long-range Riesz interactions: whether solutions eventually behave like solutions of the free equation, and how this asymptotic picture has to be corrected when they do not.
 
 2. **Long-time behavior in the presence of an external potential,** for the Vlasov–Poisson system and for dispersive equations such as NLS and Hartree, for example with a repulsive harmonic potential or Coulomb potential.
 
