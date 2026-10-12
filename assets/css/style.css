@@ -14,8 +14,8 @@
   --link-strong: #132e62;
   --heading: #1f3f73;
 
-  --page: 72rem;
-  --measure: 58rem;
+  --page: 68rem;
+  --measure: 55rem;
   color-scheme: light;
 }
 
@@ -42,6 +42,7 @@
 *::after { box-sizing: border-box; }
 
 html {
+  font-size: 17px;  /* base for all rem sizes; raise or lower to scale the whole site */
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
@@ -52,7 +53,7 @@ body {
   background-image: var(--page-gradient);
   color: var(--ink);
   font-family: "STIX Two Text", "STIX Two Text Local", "Times New Roman", serif;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.55;
   font-kerning: normal;
   font-variant-numeric: oldstyle-nums proportional-nums;
@@ -244,7 +245,7 @@ sup, sub { line-height: 0; }
   left: 0;
   top: .85rem;
   color: var(--muted);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.38;
   font-variant-numeric: lining-nums;
 }
@@ -253,7 +254,7 @@ sup, sub { line-height: 0; }
 
 .paper-title {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 500;
   line-height: 1.38;
   text-wrap: pretty;
@@ -335,10 +336,41 @@ sup, sub { line-height: 0; }
 
 .section-body h3 + .rows { margin-top: .6rem; }
 
+/* Talks: date | title, with the venue underneath */
+
+.talks {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 1.35rem 1.25rem;
+  align-items: baseline;
+  margin: .2rem 0 1rem;
+}
+
+.talks dt {
+  color: var(--muted);
+  font-variant-numeric: lining-nums;
+}
+
+.talks dd { margin: 0; }
+
+.talk-title {
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.talk-venue {
+  display: block;
+  margin-top: .2rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
 /* Narrow screens */
 
 @media (max-width: 760px) {
-  body { font-size: 17px; }
+  body { font-size: 18px; }
 
   .masthead-inner {
     width: min(var(--page), 100% - 2.25rem);
@@ -365,6 +397,10 @@ sup, sub { line-height: 0; }
   .section > h2 { font-size: 1.35rem; }
 
   .rows { grid-template-columns: 6.2rem minmax(0, 1fr); gap: .4rem .9rem; }
+
+  .talks { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .talks dt { margin-top: 1.2rem; font-size: .95rem; }
+  .talks dt:first-child { margin-top: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
