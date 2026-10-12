@@ -4,3 +4,16 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: pretty
+url: "https://whuang58.github.io"
+
+# Generates /sitemap.xml listing every page, so Google can find Research, Teaching and Talks
+plugins:
+  - jekyll-sitemap
+
+# Files kept in this folder but not published on the website
+exclude:
+  - index.tex
+  - index.pdf
+  - CV_hwr.typ
+  - postdoc
+  - tmp
