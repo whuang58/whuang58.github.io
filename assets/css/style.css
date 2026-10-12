@@ -1,12 +1,13 @@
 /* Wenrui Huang — homepage */
 
 :root {
-  --sky: #ffffff;          /* page background */
-  --sky-deep: #e3e6eb;     /* rules */
+  --sky: #f5faff;          /* page background: very light blue */
+  --page-gradient: linear-gradient(#f3faff 0, #f8fcff 1100px, #ffffff 100%);
+  --sky-deep: #dce4ef;     /* rules */
   --card: #f3f4f7;         /* abstract boxes */
   --ink: #1b2432;
   --muted: #5a6779;
-  --band: #ffffff;         /* masthead */
+  --band: transparent;     /* masthead */
   --on-band: #1b2432;
   --on-band-soft: #5a6779;
   --link: #214a94;
@@ -25,7 +26,8 @@
     --card: #181e28;
     --ink: #e6ebf3;
     --muted: #a3afc2;
-    --band: #12161d;
+    --band: transparent;
+    --page-gradient: none;
     --on-band: #e6ebf3;
     --on-band-soft: #a3afc2;
     --link: #9fbcf2;
@@ -46,7 +48,8 @@ html {
 
 body {
   margin: 0;
-  background: var(--sky);
+  background-color: var(--sky);
+  background-image: var(--page-gradient);
   color: var(--ink);
   font-family: "STIX Two Text", "STIX Two Text Local", "Times New Roman", serif;
   font-size: 18px;

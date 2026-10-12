@@ -47,22 +47,22 @@ I have worked on, or am interested in, the following topics.
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://arxiv.org/abs/2610.02643">A common structure for modified scattering: Vlasov–Riesz, Hartree, and their coupling</a></h4>
-  <p class="paper-meta"><span>with M. Xie</span> <span><a href="https://arxiv.org/abs/2610.02643">arXiv:2610.02643</a></span></p>
+  <p class="paper-meta"><span>with <a href="https://xiemy64.github.io/">M. Xie</a></span> <span><a href="https://arxiv.org/abs/2610.02643">arXiv:2610.02643</a></span></p>
 </article>
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://arxiv.org/abs/2608.04402">Long-time dynamics of Vlasov–Hartree systems across the Coulomb threshold</a></h4>
-  <p class="paper-meta"><span>with M. Xie</span> <span><a href="https://arxiv.org/abs/2608.04402">arXiv:2608.04402</a></span></p>
+  <p class="paper-meta"><span>with <a href="https://xiemy64.github.io/">M. Xie</a></span> <span><a href="https://arxiv.org/abs/2608.04402">arXiv:2608.04402</a></span></p>
 </article>
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://arxiv.org/abs/2602.21344">Scattering map for the Vlasov–Poisson system with a repulsive harmonic potential</a></h4>
-  <p class="paper-meta"><span>with H. Kwon</span> <span><a href="https://arxiv.org/abs/2602.21344">arXiv:2602.21344</a></span></p>
+  <p class="paper-meta"><span>with <a href="https://willkwon-math.kr/">H. Kwon</a></span> <span><a href="https://arxiv.org/abs/2602.21344">arXiv:2602.21344</a></span></p>
 </article>
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://arxiv.org/abs/2601.10030">Stability and instability of small BGK waves</a></h4>
-  <p class="paper-meta"><span>with D. Bian, E. Grenier and B. Pausader</span> <span><a href="https://arxiv.org/abs/2601.10030">arXiv:2601.10030</a></span></p>
+  <p class="paper-meta"><span>with D. Bian, E. Grenier and <a href="https://www.math.brown.edu/bpausade/">B. Pausader</a></span> <span><a href="https://arxiv.org/abs/2601.10030">arXiv:2601.10030</a></span></p>
 </article>
 
 <article class="paper">
@@ -72,12 +72,12 @@ I have worked on, or am interested in, the following topics.
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://link.springer.com/article/10.1007/s00220-026-05731-0">The Vlasov–Poisson System with a Perfectly Conducting Wall: Convex Domains</a></h4>
-  <p class="paper-meta"><span>with B. Pausader and M. Suzuki</span> <span><cite>Commun. Math. Phys.</cite> 407, 219 (2026)</span></p>
+  <p class="paper-meta"><span>with <a href="https://www.math.brown.edu/bpausade/">B. Pausader</a> and M. Suzuki</span> <span><cite>Commun. Math. Phys.</cite> 407, 219 (2026)</span></p>
 </article>
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://link.springer.com/article/10.1007/s00023-026-01735-7">Scattering of the Vlasov–Riesz system in three dimensions</a></h4>
-  <p class="paper-meta"><span>with H. Kwon</span> <span><cite>Annales Henri Poincaré</cite> (2026)</span></p>
+  <p class="paper-meta"><span>with <a href="https://willkwon-math.kr/">H. Kwon</a></span> <span><cite>Annales Henri Poincaré</cite> (2026)</span></p>
 </article>
 
 </div>
