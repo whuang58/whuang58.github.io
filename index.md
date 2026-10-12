@@ -9,9 +9,9 @@ title: Homepage
 
 <div class="section-body" markdown="1">
 
-I am a fifth-year PhD student in the Department of Mathematics at Brown University. My advisor is [Benoît Pausader](https://www.math.brown.edu/bpausade/).
+I am a fifth-year PhD student in the Department of Mathematics at Brown University. My advisor is [Benoît Pausader](https://www.math.brown.edu/bpausade/). I expect to graduate in May 2027.
 
-I completed my undergraduate studies at the University of Science and Technology of China (USTC).
+I completed my undergraduate studies at the University of Science and Technology of China (USTC) in 2022.
 
 I am interested in analysis and partial differential equations. My current research focuses on nonlinear dispersive PDEs and kinetic equations, especially long-time behavior and stability problems.
 
