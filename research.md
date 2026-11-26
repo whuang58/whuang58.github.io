@@ -55,7 +55,7 @@ I have worked on, or am interested in, the following topics.
 
 <article class="paper">
   <h4 class="paper-title"><a href="https://arxiv.org/abs/2602.21344">Scattering map for the Vlasov–Poisson system with a repulsive harmonic potential</a></h4>
-  <p class="paper-meta"><span>with <a href="https://willkwon-math.kr/">H. Kwon</a></span> <span><a href="https://arxiv.org/abs/2602.21344">arXiv:2602.21344</a></span></p>
+  <p class="paper-meta"><span>with <a href="https://willkwon-math.kr/">H. Kwon</a></span> <span>to appear in <cite>SIAM Journal on Mathematical Analysis</cite></span></p>
 </article>
 
 <article class="paper">

@@ -1,0 +1,360 @@
+\documentclass[10pt,reqno]{amsart}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{mathtools,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newcommand{\pr}{\partial}
+\newcommand{\Ham}{\mathcal H}
+\newcommand{\R}{\mathbb R}
+\newcommand{\HM}{\mathrm{HM}}
+\setlength{\emergencystretch}{1em}
+\title{Research Statement}
+\author{Wenrui Huang}
+\markboth{Research Statement}{Wenrui Huang}
+
+\begin{document}
+\begin{center}
+{\LARGE Research Statement}\medskip
+
+{\large Wenrui Huang}
+\end{center}
+\vspace{10pt}
+
+My research concerns the long-time behavior and stability of kinetic and dispersive partial differential equations. A central example is the Vlasov--Poisson system, which describes collisionless plasmas and self-gravitating systems. I study how solutions approach asymptotic states and whether stationary solutions are stable under perturbations, through three main themes:
+\begin{itemize}
+\item \emph{Scattering and long-range dynamics.} Using canonical transformations and vector-field methods, I construct asymptotic profiles, modified wave operators, and scattering maps for kinetic and dispersive equations.
+\item \emph{Plasma--wall interactions.} Combining convex geometry and elliptic analysis, I establish asymptotic stability of the vacuum in a convex domain and describe how the wall shapes the surviving particles and their scattering.
+\item \emph{Stability of small BGK waves.} Using Hamiltonian dynamics, spectral theory, and modulation analysis, I obtain a criterion for linear stability or instability of spatially inhomogeneous equilibria.
+\end{itemize}
+
+\section*{1. Long-Time Behavior and Scattering}
+
+\noindent\textbf{Classical Vlasov models.}
+In joint work with H.~Kwon and M.~Xie and in my single-author work \cite{HK24,HK26,H26,HX26b}, I study how the interaction potential $\Gamma$ and external potential $V$ determine the asymptotic dynamics of
+\begin{equation}\label{eq:kinetic}
+\pr_t\mu+\{\mu,\Ham\}=0,\qquad
+\Ham=\frac{|v|^2}{2}+V(x)-\lambda\phi,\qquad
+\phi=\Gamma*\rho,\quad \rho=\int_{\R^d}\mu^2\,dv.
+\end{equation}
+Here $\{\cdot,\cdot\}$ is the phase-space Poisson bracket and $\mu^2$ is the particle density. For $d=3$, $V=0$, and $\Delta\Gamma=\delta_0$, this is Vlasov--Poisson, repulsive for $\lambda>0$ and attractive for $\lambda<0$.
+
+For the three-dimensional Riesz interaction $\Gamma=|x|^{-\alpha}$ with $V=0$, the force along free transport is of order $t^{-1-\alpha}$. The velocity correction is of order $t^{-\alpha}$, and its time integral determines three regimes: \emph{linear scattering} for $\alpha>1$, \emph{logarithmic modified scattering} for $\alpha=1$, and \emph{long-range modified scattering} for $0<\alpha<1$. In the last regime, feedback between the corrected trajectories and the density generates successive terms $t^{1-\alpha},t^{1-2\alpha},\ldots$; all terms with $n\alpha\leq1$ must be retained, with logarithmic corrections when $n\alpha=1$. A modified wave operator solves the inverse problem of constructing a solution with a prescribed asymptotic profile; together with forward scattering, it gives a scattering map.
+
+For classical Vlasov--Poisson, logarithmic modified scattering \cite{CK16,IPWW22} and modified wave operators \cite{FOPW21} are known. My work determines how this picture changes under a repulsive harmonic potential and for interactions that decay more slowly than Coulomb.
+
+\smallskip
+\noindent\emph{Repulsive harmonic potentials.}
+Our results complete the small-data analysis of \cite{VV24,BVV25} by constructing wave operators and scattering maps \cite{HK26} and treating the one-dimensional case \cite{H26}.
+\begin{theorem}[\cite{H26,HK26}]\label{thm:harmonic}
+Let $\lambda\in\R$, $\Delta\Gamma=\delta_0$, and $V(x)=-|x|^2/2$ in dimension $d$. For sufficiently small initial data in suitable weighted Sobolev spaces, \eqref{eq:kinetic} has a unique global solution, with linear scattering for $d\geq3$, logarithmic modified scattering for $d=2$, and long-range modified scattering for $d=1$. The corresponding wave operators exist for small data. When $d=1$ and $\lambda>0$, these conclusions hold for arbitrarily large initial data.
+\end{theorem}
+We introduce the \emph{hyperbolic lens transform}: $s=\tanh t$ sends infinite time to $s=1$, absorbs the harmonic potential, and preserves the Hamiltonian structure. The transformed force carries the factor $(1-s^2)^{(d-4)/2}$. This is integrable up to $s=1$ for $d\geq3$, giving linear scattering, and borderline nonintegrable for $d=2$, producing the logarithmic correction. In these dimensions, one derivative and no spatial moments suffice, fewer than the vector-field approaches of \cite{VV24,BVV25} require. In dimension one, the factor $(1-s^2)^{-3/2}$ is too singular. We therefore shift the momentum by $\partial_q\Theta$, where $\Theta$ solves a Hamilton--Jacobi equation forced by the self-consistent potential. This replaces the singular force by a transport term. For $\lambda>0$, the resulting momentum damping gives uniform bounds for data of arbitrary size.
+
+\smallskip
+\noindent\emph{Riesz interactions below the Coulomb exponent.}
+Our work \cite{HK24} established power-law modified scattering near the Coulomb exponent. Following the extension to $1/2<\alpha<1$ in \cite{HP26}, our joint work \cite{HX26b} treats the full range $0<\alpha<1$.
+\begin{theorem}[\cite{HK24,HX26b}]\label{thm:riesz}
+Let $d=3$, $V=0$, $\Gamma=|x|^{-\alpha}$, $0<\alpha<1$, and $\lambda\in\R$. For sufficiently small initial data in suitable weighted Sobolev spaces, \eqref{eq:kinetic} has a unique global solution. There are bounded profiles $\mu_\infty,\theta_1,\ldots,\theta_N$, $N=\lfloor1/\alpha\rfloor$, such that
+\begin{equation}\label{eq:riesz-scattering}
+\left\|\mu(t,x,v)-\mu_\infty\left(\frac{x}{t},
+x-tv-\sum_{n=1}^{N}L_{n\alpha}(t)\nabla\theta_n\left(\frac{x}{t}\right)\right)\right\|_{L^2_{x,v}\cap L^\infty_{x,v}}
+\lesssim t^{-\alpha},
+\end{equation}
+where $L_\beta(t)=(t^{1-\beta}-1)/(1-\beta)$ for $\beta\neq1$ and $L_1(t)=\log t$.
+\end{theorem}
+The number of corrections grows as $\alpha\to0$, reflecting successive changes in the density and force caused by the corrected trajectories. Near the Coulomb exponent, \cite{HK24} uses a kinetic pseudoconformal transformation sending infinite time to a finite endpoint. A symplectic change of variables controls the endpoint singularity and also yields modified wave operators and scattering maps.
+
+\smallskip
+\noindent\textbf{Hartree equations and classical--quantum coupling.}
+My single-author work \cite{H24a} constructs modified wave operators for the Hartree equation with a repulsive Coulomb external potential, for sufficiently localized small scattering data. In joint work with M.~Xie \cite{HX26a,HX26b}, I study the Vlasov--Hartree system
+\begin{equation}\label{eq:coupled}
+\begin{cases}
+\pr_t f+v\cdot\nabla_x f-\nabla_x(V_\alpha*|u|^2)\cdot\nabla_vf=0,\\
+i\pr_tu-\Delta u=(V_\alpha*\rho_f)u,\qquad \rho_f=\displaystyle\int_{\R^3}f^2\,dv,
+\end{cases}
+\quad V_\alpha(x)=\lambda|x|^{-\alpha},\quad \lambda\neq0.
+\end{equation}
+This mixed classical--quantum model describes a Bose--Einstein condensate interacting with a degenerate Fermi gas \cite{CMP23}. The coupling is between species, so the fermionic trajectory correction and bosonic phase correction must be constructed together.
+\begin{theorem}[\cite{HX26a}]\label{thm:coupled}
+For $1/2<\alpha<2$ and sufficiently small initial data in suitable weighted Sobolev spaces, \eqref{eq:coupled} has a unique global strong solution. Both components exhibit long-range modified scattering for $1/2<\alpha<1$, logarithmic modified scattering at $\alpha=1$, and linear scattering for $1<\alpha<2$.
+\end{theorem}
+In \cite{HX26a}, the Coulomb case combines Hamiltonian characteristics for the Vlasov equation with Galilean vector fields for the Schr\"odinger equation. For $1/2<\alpha<1$, a time-dependent symplectic transformation removes the leading nonintegrable trajectory correction, while a regularized effective phase makes the dispersive remainder integrable. For $1<\alpha<2$, the coupling is already integrable along free rays.
+
+\smallskip
+\noindent\textbf{A common structure for $0<\alpha\leq1/2$.}
+In \cite{HX26b}, we establish forward modified scattering for the Hartree, Vlasov--Riesz, and Vlasov--Hartree equations in this remaining long-range regime. Along free rays $x=ty$, where $y$ is the particle velocity or the Schr\"odinger group velocity, the kinetic and wave profiles evolve under the same Hamiltonian structure, $|\eta|^2/(2t^2)+t^{-\alpha}\varphi(t,y)$. Here $t^{-\alpha}\varphi$ is the potential along the ray, and the momentum variable $\eta$ becomes $-i\nabla_y$ in the Hartree equation. A nonlinear action $\theta(t,y)$ therefore corrects the kinetic profile by a momentum translation $\nabla_y\theta$ and the wave by a phase modulation. Cancelling the potential alone is insufficient: the momentum shift generates a quadratic term of order $t^{-2\alpha}$, which is nonintegrable when $\alpha\leq1/2$. The action must consequently satisfy a Hamilton--Jacobi equation. It also changes the density and hence the potential at the same order, so the asymptotic correction cannot be constructed independently of the density it transports.
+
+Writing $m_{\mathrm K}=t^3\rho_f(t,ty)$ and $m_{\mathrm H}=t^3|u(t,ty)|^2$, each component satisfies an \emph{action--density system}
+\[
+\pr_t\theta_k-\frac{|\nabla_y\theta_k|^2}{2t^2}=t^{-\alpha}\varphi_j,\qquad
+\pr_t m_k-\frac1{t^2}\nabla_y\cdot(m_k\nabla_y\theta_k)
+=-\frac1{t^2}\nabla_y\cdot\mathcal J_k.
+\]
+Here $\varphi_j$ is the regularized potential generated by the source density, $j=k$ for a single equation and $j\neq k$ for the coupled system, and $\mathcal J_k$ is an integrable residual current. The density drives the action, whose gradient carries the leading density flux. Iterating this feedback determines the successive corrections in \eqref{eq:riesz-scattering} recursively from the limiting density; the same recursion applies to the coupled system, with each species generating the potential acting on the other. Thus kinetic trajectory corrections and dispersive phase corrections are two realizations of one mechanism.
+
+\section*{2. Vlasov--Poisson Dynamics in a Convex Domain}
+
+In joint work with B.~Pausader and M.~Suzuki \cite{HPS24}, I study asymptotic stability of the vacuum for the repulsive three-dimensional Vlasov--Poisson system in an unbounded convex domain $D$. The wall is perfectly conducting, imposing a Dirichlet condition on the electrostatic potential, and absorbs particles that reach it. Translation invariance is lost, and grazing trajectories make the transport boundary characteristic.
+
+Writing $\widetilde\mu^{\,2}$ for the phase-space density, the boundary conditions are
+\[
+\phi|_{\partial D}=0,\qquad
+\widetilde\mu|_{\Gamma_{\mathrm{in}}}=0,\qquad
+\Gamma_{\mathrm{in}}=\{(x,v):x\in\partial D,\ \mathbf n(x)\cdot v\geq0\},
+\]
+where $\mathbf n$ is the inward normal. Thus particles may leave the domain but cannot enter through the wall. The main question is how this one-way loss interacts with the self-consistent force to determine the motion of the particles that survive.
+
+The geometry enters through the \emph{asymptotic domain}
+\[
+D_\infty=\operatorname{Int}\bigcap_{s>0}s^{-1}D,
+\]
+after placing the origin on $\partial D$. Its closure is the maximal solid convex cone with vertex at the origin contained in $\overline D$, and it encodes the velocity directions compatible with escape to infinity.
+\begin{theorem}[\cite{HPS24}]\label{thm:wall}
+Let $D\subset\R^3$ be an admissible $C^3$ unbounded convex domain. For sufficiently small, regular, localized initial data satisfying the boundary compatibility conditions, the system has a unique global classical solution. The potential and electric field decay at the optimal rates $t^{-1}$ and $t^{-2}$. If $D_\infty\neq\varnothing$, the surviving particles exhibit logarithmically modified scattering for velocities in $D_\infty$. The asymptotic field is determined by the limiting distribution and the Dirichlet Green function of $D_\infty$. Mass carried by velocities outside $\overline{D_\infty}$ tends to zero; if $D_\infty=\varnothing$, all surviving mass tends to zero.
+\end{theorem}
+The proof combines convex geometry, elliptic theory, and kinetic transport. We extend the Dirichlet potential across the wall, permitting whole-space evolution estimates while retaining absorption. In free-transport coordinates, weighted phase-space estimates are combined with a scale decomposition of the Dirichlet Green function. The blow-down $s^{-1}D\to D_\infty$ identifies the leading field along an escaping trajectory:
+\[
+E(tv,t)\sim t^{-2}E_\infty(v).
+\]
+Although this force is integrable in time, the associated velocity correction produces a logarithmic deviation in position. A grazing function quantifies proximity to tangential impact and gives uniform control near the characteristic boundary. The asymptotic domain and the grazing function together provide a framework for studying more general plasma--wall interactions.
+
+\section*{3. Stability and Instability of Small BGK Waves}
+
+Bernstein--Greene--Kruskal (BGK) waves \cite{BGK57} are spatially inhomogeneous equilibria of Vlasov--Poisson. We consider the one-dimensional periodic system
+\begin{equation}\label{eq:bgk-vp}
+\pr_t\mu+\{\mu,\Ham\}=0,\qquad
+\Ham=\frac{v^2}{2}-\phi,\qquad
+\pr_x^2\phi=\int_\R\mu\,dv-1,\qquad x\in\mathbb T.
+\end{equation}
+In this section $\mu$ itself is the electron distribution function. For energy-dependent steady states $\mu_S=F(\Ham_S)$, normalizing $\min\phi_S=0$ makes $\{\Ham_S=0\}$ the separatrix between trapped and passing particles. We call $F|_{(0,\infty)}$ the free part.
+
+For a homogeneous equilibrium $\mu_h(v)$, the linearized Fourier mode $\xi\neq0$ is governed by the dielectric function
+\begin{equation}\label{eq:dielectric}
+\HM[\mu_h](\theta,\xi)=1-\frac1{\xi^2}\int_\R
+\frac{\mu_h'(v)}{v+\theta/\xi}\,dv,\qquad \operatorname{Im}\theta<0,
+\end{equation}
+extended to real $\theta$ by the Plemelj formula. A zero in the open lower half-plane gives a growing mode \cite{L46,P60}. Nonlinear Landau damping is known for Penrose-stable homogeneous equilibria \cite{MV11,BMM16,GNR21,IPWW24b}, whereas general stability criteria for inhomogeneous BGK waves have remained open.
+
+In joint work with D.~Bian, E.~Grenier, and B.~Pausader \cite{BGHP26}, I show that the linear stability of small BGK waves is determined by their limiting homogeneous equilibrium. If their amplitudes tend to zero and their free parts converge, the limit $\mu_0(v)=F_0(v^2/2)$ is necessarily \emph{marginal}: $\HM[\mu_0](0,\xi_0)=0$. The potentials also have a universal leading shape. If $A_n=\max\phi_n\to0$, then, after a spatial translation,
+\[
+\phi_n(x)=\frac{A_n}{2}\bigl[1+\cos(\xi_0x)\bigr]+O(A_n^2).
+\]
+Thus the nonlinear pendulum describes the leading particle dynamics, independently of the particular free distribution.
+
+We assume a \emph{generic one-well germ}: $\xi_0=1$, $\mu_0''(0)\neq0$, and no nonzero neutral frequency, meaning $\HM[\mu_0](\theta,\xi)\neq0$ for all real $\theta\neq0$ and $\xi\neq0$. Let $\mathcal B_\varepsilon(\mu_0)$ denote waves with amplitude at most $\varepsilon$, free part $\varepsilon$-close to the germ, and uniform bounds across the separatrix.
+
+\begin{theorem}[\cite{BGHP26}]\label{thm:bgk}
+For a generic one-well germ $\mu_0$, every BGK wave in $\mathcal B_\varepsilon(\mu_0)$ with sufficiently small $\varepsilon$ satisfies the following alternative.
+\begin{itemize}
+\item If $\HM[\mu_0](\theta,\xi)=0$ for some $\xi\neq0$ and $\operatorname{Im}\theta<0$, the wave is spectrally and linearly unstable. It admits an exponentially growing mode whose growth rate converges to the maximal growth rate of the homogeneous germ as $\varepsilon\to0$.
+\item Otherwise, the wave is linearly stable up to modulation. For zero-charge perturbations with $\langle v\rangle^2 f_{\mathrm{in}}\in L^\infty(\mathbb T\times\R)$, the linearized solution decomposes as
+\[
+f=f^{\mathrm{bgk}}+f^{\mathrm{gal}}+f^{\mathrm{odd}}+f^{\mathrm{dyn}},
+\qquad
+\int_0^\infty\|E^{\mathrm{dyn}}(\cdot,t)\|_{L_x^2}^2\,dt<\infty.
+\]
+Here $f^{\mathrm{bgk}}$ is stationary and tangent to the BGK manifold, $f^{\mathrm{gal}}$ contains spatial translation and Galilean-boost modes, and $f^{\mathrm{odd}}$ is stationary with zero density but possibly nonzero current.
+\end{itemize}
+\end{theorem}
+
+The modulation is \emph{infinite-dimensional}: even after fixing the period and well position, varying the energy distribution gives infinitely many stationary directions. Damping therefore concerns the dynamical electric field after separating these directions and the symmetry modes.
+
+The stationary component $f^{\mathrm{bgk}}$ describes an infinitesimal change of the energy distribution through nearby BGK waves. This freedom distinguishes the problem from the familiar modulation of a solitary wave by finitely many parameters. The symmetry component is also essential: its electric potential has the form
+\[
+\psi^{\mathrm{gal}}(x,t)=(a+bt)\,\partial_x\phi_\varepsilon(x).
+\]
+A Galilean boost thus produces a linearly drifting center even in the stable regime. Such motion must be separated before asking whether the field damps. Finally, $f^{\mathrm{odd}}$ represents an imbalance between right- and left-moving passing particles, carrying current but no charge density or electric field.
+
+The analysis resolves two difficulties. First, trapped and passing trajectories couple the spatial Fourier modes. We use action--angle coordinates and replace the scalar dielectric function by an operator-valued dispersion relation $\mathbf M(\theta)$. Since small BGK waves have the nonlinear-pendulum Hamiltonian to leading order, this operator has a universal expansion
+\[
+\mathbf M(\theta)=\mathbf M^{\mathrm{hom}}(\theta)
++\partial_eF(0^+)\sqrt{\varepsilon}\,
+\mathbf M^{\mathrm{pend}}(\theta/\sqrt{\varepsilon})
++O_{L^2\to L^2}(\varepsilon).
+\]
+Here $\mathbf M^{\mathrm{hom}}$ is associated with the homogeneous profile $F(v^2/2)$ formed from the wave's free distribution. It is diagonal in spatial Fourier variables, with entries \eqref{eq:dielectric}, while $\mathbf M^{\mathrm{pend}}$ depends only on trajectories of the nonlinear pendulum. The kernel of the full operator in the open lower half-plane characterizes growing modes. The expansion identifies the trapping scale $|\theta|\simeq\sqrt{\varepsilon}$, where trapped and free particles compete.
+
+Second, the nearby stationary manifold creates neutral directions. At zero frequency, translation gives an exact zero mode, while the amplitude direction has an eigenvalue of order $\sqrt{\varepsilon}$. Our analysis of the local BGK manifold identifies these directions before a Schur reduction of the spectral problem. On their two-dimensional block, the trapping-scale dispersion relation is expressed through two universal functions of the nonlinear pendulum. After separating the neutral directions, these functions do not vanish in the closed lower half-plane for either sign of $\partial_eF(0^+)$. Under the theorem's hypotheses, trapping therefore produces no additional growing modes: instability is inherited from the homogeneous germ at frequencies of order one.
+
+The argument also extends to one-well steady states with an odd passing-particle current. The odd part changes the dispersion operator through an explicit additional block, and the criterion uses the dielectric function of the full limiting profile. Its zeros need not be symmetric under $\theta\mapsto-\overline\theta$, so the growing modes may travel.
+
+\section*{Ongoing Projects and Future Research}
+
+\noindent\textbf{Attractive harmonic potentials.}
+Theorem~\ref{thm:harmonic} concerns a repulsive harmonic potential. The corresponding attractive problem remains largely unexplored, and our lens transform also applies in that setting. The phase-mixing results of Chaturvedi and Luk \cite{CL22,CL24}, together with modified scattering near an attractive point mass \cite{KW25}, provide relevant comparisons for investigating how external forces alter the long-time dynamics.
+
+\smallskip
+\noindent\textbf{More general external potentials.}
+I aim to identify radial external potentials for which solutions exhibit scattering or modified scattering. For radially symmetric solutions, the Hamiltonian dynamics reduce to an integrable system, and asymptotic action--angle variables \cite{PW21,PWY22} may help describe the corrected trajectories. Extending this analysis to nonradial solutions is substantially harder, even when the potential is radial. The Coulomb and harmonic potentials provide distinguished examples with superintegrable Hamiltonian flows, a structure that plays an essential role in \cite{PWY22}.
+
+\smallskip
+\noindent\textbf{Reflecting boundaries.}
+Our work \cite{HPS24} treats absorption, the simplest model of plasma--wall interaction. A natural next step is a perfectly reflecting wall, where particles undergo specular reflection rather than leaving the domain. I aim to understand how repeated boundary interactions affect global regularity, asymptotic stability, and the long-time particle distribution.
+
+\smallskip
+\noindent\textbf{Quantitative damping and nonlinear BGK stability.}
+For the linearly stable waves in Theorem~\ref{thm:bgk}, the current conclusion is qualitative damping, $E^{\mathrm{dyn}}\in L^2([0,\infty);L_x^2)$. We are working toward quantitative rates and, under suitable regularity assumptions, exponential decay of the dynamical electric field. The longer-term goal is nonlinear stability, retaining the infinite-dimensional modulation required by the nearby stationary manifold.
+
+\smallskip
+\noindent\textbf{Nonlinear instability and the degenerate threshold.}
+In the unstable regime, the next step is to promote the exponentially growing linear mode to nonlinear instability using ideas from \cite{GS95,L01,L05}. A separate question concerns the degenerate case $\mu_0''(0)=0$, which is excluded by the genericity hypothesis. Understanding this threshold may require higher-order expansions of the BGK Hamiltonian and the associated dispersion operator.
+
+\clearpage
+\begingroup
+\setlength{\parskip}{0pt}
+\begin{thebibliography}{CSFGKA13}
+\fontsize{9pt}{10.3pt}\selectfont
+\setlength{\itemsep}{1pt}
+\setlength{\parsep}{0pt}
+\bibitem[BMM16]{BMM16}
+J. Bedrossian, N. Masmoudi, and C. Mouhot,
+\href{https://link.springer.com/article/10.1007/s40818-016-0008-2}{\emph{Landau damping: Paraproducts and Gevrey regularity}},
+Ann. PDE \textbf{2} (2016), no.~1, Art.~4, 71 pp.
+
+\bibitem[BGK57]{BGK57}
+I. Bernstein, J. Greene, and M. Kruskal,
+\href{https://journals.aps.org/pr/abstract/10.1103/PhysRev.108.546}{\emph{Exact nonlinear plasma oscillations}},
+Phys. Rev. \textbf{108} (1957), no.~3, 546--550.
+
+\bibitem[BGHP26]{BGHP26}
+D. Bian, E. Grenier, W. Huang, and B. Pausader,
+\href{https://arxiv.org/abs/2601.10030}{\emph{Stability and instability of small BGK waves}},
+arXiv:2601.10030.
+
+\bibitem[BVV25]{BVV25}
+L.~Bigorgne, A.~Velozo Ruiz, and R.~Velozo Ruiz,
+\emph{Modified scattering of small data solutions for the Vlasov--Poisson system with a repulsive potential},
+SIAM J. Math. Anal. \textbf{57} (2025), no.~1, 714--752.
+
+\bibitem[CMP23]{CMP23}
+E. C\'ardenas, J.~K. Miller, and N. Pavlovi\'c,
+\href{https://arxiv.org/abs/2309.04638}{\emph{On the effective dynamics of Bose--Fermi mixtures}},
+Ars Inven. Anal. (2025), Paper No.~5, 54 pp.; \href{https://arxiv.org/abs/2309.04638}{arXiv:2309.04638} (2023).
+
+\bibitem[CL22]{CL22}
+S. Chaturvedi and J. Luk,
+\href{https://www.aimsciences.org/article/doi/10.3934/krm.2022002}{\emph{Phase mixing for solutions to 1D transport equation in a confining potential}},
+Kinet. Relat. Models \textbf{15} (2022), no.~3, 403--416.
+
+\bibitem[CL24]{CL24}
+S.~Chaturvedi and J.~Luk,
+\emph{Linear and nonlinear phase mixing for the gravitational Vlasov--Poisson system under an external Kepler potential},
+to appear in Arch. Ration. Mech. Anal (2026).
+
+\bibitem[CK16]{CK16}
+S.-H.~Choi and S.~Kwon,
+\emph{Modified scattering for the Vlasov--Poisson system},
+Nonlinearity \textbf{29} (2016), no.~9, 2755--2774.
+
+\bibitem[FOPW21]{FOPW21}
+P. Flynn, Z. Ouyang, B. Pausader, and K. Widmayer,
+\href{https://doi.org/10.1007/s42543-021-00041-x}{\emph{Scattering map for the Vlasov--Poisson system}},
+Peking Math. J. \textbf{6} (2023), no.~2, 365--392; \href{https://arxiv.org/abs/2101.01390}{arXiv:2101.01390} (2021).
+
+\bibitem[GNR21]{GNR21}
+E. Grenier, T.~T. Nguyen, and I. Rodnianski,
+\emph{Landau damping for analytic and Gevrey data},
+Math. Res. Lett. \textbf{28} (2021), no.~6, 1679--1702.
+
+\bibitem[GS95]{GS95}
+Y. Guo and W.~A. Strauss,
+\href{https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.3160480803}{\emph{Instability of BGK equilibria}},
+Comm. Pure Appl. Math. \textbf{48} (1995), no.~8, 861--894.
+
+\bibitem[HP26]{HP26}
+Y. Hong and S. Pankavich,
+\href{https://arxiv.org/abs/2604.04256}{\emph{Modified scattering for the Vlasov--Riesz system with long-range interactions}},
+arXiv:2604.04256 (2026).
+
+\bibitem[H24a]{H24a}
+W. Huang,
+\href{https://arxiv.org/abs/2411.02737}{\emph{Modified wave operators for the Hartree equation with repulsive Coulomb potential}},
+arXiv:2411.02737 (2024).
+
+\bibitem[H26]{H26}
+W. Huang,
+\href{https://arxiv.org/abs/2610.02551}{\emph{Asymptotic behavior of the one-dimensional Vlasov--Poisson system with a repulsive harmonic potential}},
+arXiv:2610.02551 (2026).
+
+\bibitem[HK24]{HK24}
+W. Huang and H. Kwon,
+\href{https://link.springer.com/article/10.1007/s00023-026-01735-7}{\emph{Scattering of the Vlasov--Riesz system in three dimensions}},
+Ann. Henri Poincar\'e (2026), \href{https://arxiv.org/abs/2407.16919}{arXiv:2407.16919}.
+
+\bibitem[HK26]{HK26}
+W. Huang and H. Kwon,
+\href{https://arxiv.org/abs/2602.21344}{\emph{Scattering map for the Vlasov--Poisson system with a repulsive harmonic potential}},
+arXiv:2602.21344 (2026).
+
+\bibitem[HPS24]{HPS24}
+W. Huang, B. Pausader, and M. Suzuki,
+\href{https://arxiv.org/abs/2412.13434}{\emph{The Vlasov--Poisson system with a perfectly conducting wall: Convex domains}},
+ Comm. Math. Phys. \textbf{407} (2026)
+
+\bibitem[HX26a]{HX26a}
+W. Huang and M. Xie,
+\href{https://arxiv.org/abs/2608.04402}{\emph{Long-time dynamics of Vlasov--Hartree systems across the Coulomb threshold}},
+arXiv:2608.04402 (2026).
+
+\bibitem[HX26b]{HX26b}
+W. Huang and M. Xie,
+\href{https://arxiv.org/abs/2610.02643}{\emph{A common structure for modified scattering: Vlasov--Riesz, Hartree, and their coupling}},
+arXiv:2610.02643 (2026).
+
+\bibitem[IPWW22]{IPWW22}
+A.~D. Ionescu, B. Pausader, X. Wang, and K. Widmayer,
+\href{https://doi.org/10.1093/imrn/rnab155}{\emph{On the asymptotic behavior of solutions to the Vlasov--Poisson system}},
+Int. Math. Res. Not. IMRN \textbf{2022} (2022), no.~12, 8865--8889.
+
+\bibitem[IPWW24b]{IPWW24b}
+A.~D. Ionescu, B. Pausader, X. Wang, and K. Widmayer,
+\emph{Nonlinear Landau damping and wave operators in sharp Gevrey spaces},
+preprint (2024), \href{https://arxiv.org/abs/2405.04473}{arXiv:2405.04473}.
+
+\bibitem[KW25]{KW25}
+B. Kepka and K. Widmayer,
+\href{https://arxiv.org/abs/2511.04363}{\emph{Modified scattering dynamics in the Vlasov--Poisson equation near an attractive point mass}},
+arXiv:2511.04363 (2025).
+
+\bibitem[L46]{L46}
+L. Landau,
+\emph{On the vibrations of the electronic plasma},
+Akad. Nauk SSSR. Zhurnal Eksper. Teoret. Fiz. \textbf{16} (1946), 574--586; English transl.\ J. Phys. (USSR) \textbf{10} (1946), 25--34.
+
+\bibitem[L01]{L01}
+Z. Lin,
+\href{https://link.intlpress.com/JDetail/1806606498308452354}{\emph{Instability of periodic BGK waves}},
+Math. Res. Lett. \textbf{8} (2001), no.~4, 521--534.
+
+\bibitem[L05]{L05}
+Z. Lin,
+\href{https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.20028}{\emph{Nonlinear instability of periodic BGK waves for the Vlasov--Poisson system}},
+Comm. Pure Appl. Math. \textbf{58} (2005), no.~4, 505--528.
+
+\bibitem[MV11]{MV11}
+C. Mouhot and C. Villani,
+\href{https://projecteuclid.org/journals/acta-mathematica/volume-207/issue-1/On-Landau-damping/10.1007/s11511-011-0068-9.full}{\emph{On Landau damping}},
+Acta Math. \textbf{207} (2011), 29--201.
+
+\bibitem[PW21]{PW21}
+B. Pausader and K. Widmayer,
+\href{https://link.springer.com/article/10.1007/s00220-021-04117-8}{\emph{Stability of a point charge for the Vlasov--Poisson system: The radial case}},
+Comm. Math. Phys. \textbf{385} (2021), no.~3, 1741--1769.
+
+\bibitem[PWY22]{PWY22}
+B. Pausader, K. Widmayer, and J. Yang,
+\href{https://doi.org/10.4171/JEMS/1518}{\emph{Stability of a point charge for the repulsive Vlasov--Poisson system}},
+J. Eur. Math. Soc. \textbf{28} (2026), 2751--2848.
+
+\bibitem[P60]{P60}
+O. Penrose,
+\emph{Electrostatic instabilities of a uniform non-Maxwellian plasma},
+Phys. Fluids \textbf{3} (1960), 258--265.
+
+\bibitem[VV24]{VV24}
+A.~Velozo Ruiz and R.~Velozo Ruiz,
+\emph{Small data solutions for the Vlasov--Poisson system with a repulsive potential},
+Comm. Math. Phys. \textbf{405} (2024), no.~3, Paper No.~80, 45 pp.
+\end{thebibliography}
+\endgroup
+\end{document}

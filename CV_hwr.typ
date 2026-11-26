@@ -103,7 +103,7 @@
     #text(fill: title-blue, style: "italic")[
       Scattering map for the Vlasov-Poisson system with a repulsive harmonic potential
     ]
-  ], with H. Kwon. arXiv:2602.21344.
+  ], with H. Kwon, to appear in *SIAM Journal on Mathematical Analysis*.
 
 + #link("https://arxiv.org/abs/2601.10030")[
     #text(fill: title-blue, style: "italic")[

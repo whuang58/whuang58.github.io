@@ -3,9 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <title>{% if page.url == '/' %}Wenrui Huang — Mathematics, Brown University{% else %}{{ page.title }} — {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}" />
   <meta name="author" content="Wenrui Huang" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+{% if page.url == '/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wenrui Huang",
+    "url": "https://whuang58.github.io/",
+    "jobTitle": "PhD student in Mathematics",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Brown University" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Science and Technology of China" },
+    "knowsAbout": ["Partial differential equations", "Kinetic equations", "Dispersive equations", "Vlasov–Poisson system"]
+  }
+  </script>
+{% endif %}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
